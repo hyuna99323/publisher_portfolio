@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<!-- portfolio.html -->
+<html lang="ko-KR" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="portfolio">
+  <meta name="author" content="hyuna">
+  <meta name="google-site-verification" content="881jObcFsuCvd5-B9a5os5InMgb0VbF9k9pJzAeDwmk">
+
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <link rel="stylesheet" href="../css/common/common.css">
+  <link rel="stylesheet" href="../css/src/portfolio.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="../font/Black_Han_Sans/BlackHanSans-Regular.ttf" rel="stylesheet">
+
+  
+  
+
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    console.log(ga.q);
+
+    // ga('create', 'UA-XXXXX-Y', 'auto');
+    // ga('send', 'pageview');
+  </script>
+  <!-- End Google Analytics -->
+
+  <!-- 폰트어썸 cdn -->
+  <script src="https://kit.fontawesome.com/3fffe4da51.js" crossorigin="anonymous"></script>
+
+  <title>hyuna portfolio</title>
+
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+
+    <!-- #header -->
+    <header id="headbox">
+      <div class="headinner">
+        <h1>
+          <a href="./portfolio.html">
+            <span class="title_O">O</span><span class="title_H">H</span><span class="title_A">A</span>
+          </a>
+        </h1>
+      </div>
+
+        <!-- .moblie_gnb -->
+      <div class="burger_inner">
+        <div class="navbar_overlay"></div>
+        <nav class="navbar_burger">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+            <path d="M4.33334 18.7092V17.6258H21.6667V18.7092H4.33334ZM4.33334 13.5417V12.4583H21.6667V13.5417H4.33334ZM4.33334 8.37417V7.29083H21.6667V8.37417H4.33334Z" fill="black"/>
+          </svg>
+        </nav>
+
+        <div class="navbar_menu">
+          <a href="#home">home</a>
+          <a href="#introduce">introduce</a>
+          <a href="#advantage">advantage</a>
+          <a href="#project">project</a>
+          <a href="#contact">contact</a>
+          <div class="navbar_burger_back">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 26 26" fill="none">
+              <path d="M14.0183 13L20.0056 7.01278C20.1239 6.87462 20.1857 6.6969 20.1787 6.51513C20.1717 6.33337 20.0963 6.16094 19.9677 6.03232C19.8391 5.9037 19.6666 5.82834 19.4849 5.82132C19.3031 5.8143 19.1254 5.87613 18.9872 5.99445L13 11.9817L7.01278 5.98723C6.87678 5.85123 6.69233 5.77483 6.5 5.77483C6.30767 5.77483 6.12322 5.85123 5.98722 5.98723C5.85122 6.12322 5.77482 6.30767 5.77482 6.5C5.77482 6.69233 5.85122 6.87678 5.98722 7.01278L11.9817 13L5.98722 18.9872C5.91162 19.052 5.85021 19.1316 5.80686 19.2212C5.76351 19.3109 5.73915 19.4084 5.73531 19.5079C5.73147 19.6074 5.74823 19.7066 5.78454 19.7992C5.82085 19.8919 5.87592 19.9761 5.94631 20.0465C6.01669 20.1169 6.10086 20.1719 6.19354 20.2082C6.28622 20.2446 6.38541 20.2613 6.48487 20.2575C6.58433 20.2536 6.68193 20.2293 6.77153 20.1859C6.86113 20.1426 6.94081 20.0812 7.00555 20.0056L13 14.0183L18.9872 20.0056C19.1254 20.1239 19.3031 20.1857 19.4849 20.1787C19.6666 20.1717 19.8391 20.0963 19.9677 19.9677C20.0963 19.8391 20.1717 19.6666 20.1787 19.4849C20.1857 19.3031 20.1239 19.1254 20.0056 18.9872L14.0183 13Z" fill="black"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <nav class="gnb">
+        <h2 class="blind">글로벌네비게이션</h2>
+        <!-- home -->
+        <input type="button" id="home_btn" value="home" class="blind">
+        <label for="home_btn">
+          <a href="#home">home</a>
+        </label>
+        <!-- introduce -->
+        <input type="button" id="introduce_btn" value="introduce" class="blind">
+        <label for="introduce_btn">
+          <a href="#introduce">introduce</a>
+        </label>
+        <!-- advantage -->
+        <input type="button" id="advantage_btn" value="advantage" class="blind">
+        <label for="advantage_btn">
+          <a href="#advantage">advantage</a>
+        </label>
+        <!-- project -->
+        <input type="button" id="project_btn" value="project" class="blind">
+        <label for="project_btn">
+          <a href="#project">project</a>
+        </label>
+        <!-- contact -->
+        <input type="button" id="contact_btn" value="contact" class="blind">
+        <label for="contact_btn">
+          <a href="#contact">contact</a>
+        </label>
+      </nav>
+    </header> <!-- // #header -->
+
+
+    <!-- main -->
+    <main>
+      <!-- #home -->
+      <section id="home">
+        <h2 class="blind">home</h2>
+
+        <!-- home part 왼쪽 글씨 -->
+        <div class="left_span">
+          <span>오늘보다 현명하고 아름다운 내일을 향해</span>
+        </div>
+
+        <!-- home part 가운데 -->
+        <div class="middle_content">
+          <p>I&#39;m Oh Hyuna</p>
+          <div class="cover_img">
+
+            <!-- cover img -->
+            <div class="coverImgInner"></div>
+            <!-- cover img decoration -->
+            <!-- 파란 사각형 모형 -->
+            <div class="blue_H"></div>
+            <!-- 주황 삼각형 모형 -->
+            <div class="orange_A"></div>
+            <!-- 노랑 원형 모형 -->
+            <div class="yellow_O"></div>
+          </div>
+          
+          <p>To a more beautiful <br />
+            tomorrow than today</p>
+        </div>
+
+        <!-- home part 오른쪽 글씨 -->
+        <div class="right_span">
+          <span>web publisher</span>
+        </div>
+      </section> <!-- // #home -->
+
+      <!-- #introduce -->
+      <section id="introduce">
+        <h2>introduce</h2>
+        <div class="about_inner">
+
+          <!-- 인삿말, 사진, 짧은소개 part -->
+          <div class="about_left">
+
+            <!-- 인삿말 -->
+            <article class="greeting">
+              <p>
+                안녕하세요 <br>
+                웹퍼블리셔 오현아입니다&#46;
+              </p>
+            </article> <!-- // .greeting -->
+
+            <!-- 본인사진 : css에서 삽입 -->
+            <article class="id_picture"></article>
+
+            <!-- 추구미 및 입사포부 -->
+            <article class="sort_introduce">
+              <span>
+                사용자가 풍부한 경험을 할 수 있는 웹페이지를 제작하는데 힘씁니다! 다양한 사용자에게 깔끔하면서 편리하고 즐거움을 제공하겠습니다.&#46; <br />
+
+                제가 가진 장점과 능력에 안주하지 않고 꾸준히 발전하겠습니다&#46; 발전하는 기술력으로 사용자에겐 다양한 경험을 클라이언트에겐 만족스러운 결과물을 회사에게 성과를 가져와 발전할 수 있도록 기여하겠습니다&#46;
+              </span>
+            </article> <!-- // .sort_introduce -->
+          </div>
+
+          <!-- 프로필, 학력, 이력, 키워드 -->
+          <div class="about_middle">
+
+            <!-- 프로필 : 이름, 나이 -->
+            <article class="profile">
+              <h3>profile</h3>
+              <p>오현아 <br />
+              1999&#46;03&#46;23</p>
+            </article> <!-- // .profile -->
+
+            <!-- 학력 -->
+            <article class="education">
+              <h3>education</h3>
+              <p>2018&#46;02 동안고등학교 졸업 <br />
+              2021&#46;02 대림대학교 비서사무행정과 졸업</p>
+            </article> <!-- // .education -->
+
+            <!-- 경력 -->
+            <article class="work">
+              <h3>work</h3>
+              <p>
+                2021&#46; 05 &#45; 2021&#46; 08 &#40;주&#41; 이지놈 인턴 <br />
+              </p>
+            </article> <!-- // .work -->
+            
+            <!-- 키워드 -->
+            <article class="key_ward">
+              <h3>key ward</h3>
+              <p>good communication&#40;커뮤니케이션 능력&#41;&#44; try&#40;도전적&#41;&#44; positive&#40;긍정적&#41;&#44; calmness&#40;침착함&#41;</p>
+            </article> <!-- // .key_ward -->
+          </div>
+
+          <!-- skill -->
+          <div class="about_right">
+            
+            <article class="skill">
+              <h3 class="skill_title">
+                <span>develop</span>
+                <span>skill</span>
+              </h3>
+
+              <!-- skill 내용 묶는 상자 -->
+              <div class="skillBox">
+                <!-- html -->
+                <div class="skill_inner">
+                  <div class="checkbox"></div>
+                  <p>HTML</p>
+                </div>
+
+                <!-- css -->
+                <div class="skill_inner">
+                  <!-- 체크박스 모양 -->
+                  <div class="checkbox"></div>
+                  <p>CSS</p>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="skill_inner">
+                  <!-- 체크박스 모양 -->
+                  <div class="checkbox"></div>
+                  <p>JavaScript</p>
+                </div>
+
+                <!-- jQuery -->
+                <div class="skill_inner">
+                  <!-- 체크박스 모양 -->
+                  <div class="checkbox"></div>
+                  <p>jQuery</p>
+                </div>
+
+                <!-- Sass -->
+                <div class="skill_inner">
+                  <!-- 체크박스 모양 -->
+                  <div class="checkbox"></div>
+                  <p>Sass</p>
+                </div>
+
+                <!-- Git hub -->
+                <div class="skill_inner">
+                  <!-- 체크박스 모양 -->
+                  <div class="checkbox"></div>
+                  <p>Git hub</p>
+                </div>
+
+                <!-- Figma -->
+                <div class="skill_inner">
+                  <!-- 체크박스 모양 -->
+                  <div class="checkbox"></div>
+                  <p>Figma</p>
+                </div>
+
+                <!-- 반응형 -->
+                <div class="skill_inner">
+                  <!-- 체크박스 모양 -->
+                  <div class="checkbox"></div>
+                  <p>반응형</p>
+                </div>
+              </div>
+            </article> <!-- // .skill -->
+          </div> <!-- // .about_right -->
+        </div> <!-- // .about_inner -->
+      </section> <!-- // #introduce -->
+
+      <!-- #advantage : 장점  -->
+      <section id="advantage">
+        <h2>advantage</h2>
+
+        <!-- 첫번째 장점 -->
+        <article class="advantageBox">
+          <div class="advantage_inner">
+            <div class="advantage_txt">
+              <h3>01</h3>
+              <p>✔️ Detailed Coding</p>
+              <p>저의 꼼꼼한 성격은 코딩의 오류를 최소한으로 줄이기 위해 웹 표준을 준수하고 시맨틱마크업을 사용하여 접근성을 향상 시키고 검색엔진 최적화&#40;SEO&#41;하여 효율적인 마크업을 합니다&#46;</p>
+            </div>
+            <!-- 비디오 -->
+            <figure>
+              <video src="../img/IMG_1200.mov" muted loop></video>
+            </figure>
+          </div>
+        </article> <!-- // 첫번째 장점 -->
+
+        <!-- 두번째 장점 -->
+        <article class="advantageBox">
+          <div class="advantage_inner">
+            <div class="advantage_txt">
+              <h3>02</h3>
+              <p>✔️ a Sense of Responsibility</p>
+              <p>저의 책임감 있는 태도는 어떤 상황에서도 물러나지 않고 끝까지 해낼 수 있는 힘이 있습니다&#46;</p>
+            </div>
+            <!-- 비디오 -->
+            <figure>
+              <video src="../img/IMG_6964.mov" muted loop></video>
+            </figure>
+          </div>
+        </article> <!-- // 두번째 장점 -->
+
+        <!-- 세번째 장점 -->
+        <article class="advantageBox">
+          <div class="advantage_inner">
+            <div class="advantage_txt">
+              <h3>03</h3>
+              <p>✔️ Steady Study</p>
+              <p>저의 자기주도적 학습은 계속해서 발전하는 IT문화에 발빠르게 움직일 수 있습니다&#46;</p>
+            </div>
+            <!-- 비디오 -->
+            <figure>
+              <video src="../img/advantage03.mov" muted loop></video>
+            </figure>
+          </div>
+        </article> <!-- // 세번째 장점 -->
+
+        <!-- 네번째 장점 -->
+        <article class="advantageBox">
+          <div class="advantage_inner">
+            <div class="advantage_txt">
+              <h3>04</h3>
+              <p>✔️ Good Communication</p>
+              <p>비서사무행정과를 전공하면서 배운 저의 커뮤니케이션 능력은 사용자와 팀원들과의 대화를 통해 협력에 도움을 줍니다&#46;</p>
+            </div>
+            <!-- 비디오 -->
+            <figure>
+              <video src="../img/advantage04.mov" muted loop></video>
+            </figure>
+          </div>
+        </article> <!-- // 네번째 장점 -->
+
+        <!-- 다섯번째 장점 -->
+        <article class="advantageBox">
+          <div class="advantage_inner">
+            <div class="advantage_txt">
+              <h3>05</h3>
+              <p>✔️ For The User</p>
+              <p>사용자를 위하는 배려하는 마음은 사용자를 대신하여 생각함으로써 빠른 정보와 편리함을 제공합니다&#46;</p>
+            </div>
+            <!-- 비디오 -->
+            <figure>
+              <video src="../img/advantage05.mov" muted loop></video>
+            </figure>
+          </div>
+        </article> <!-- // 다섯번째 장점 -->
+      </section> <!-- // #advantage  -->
+
+      <!-- #project -->
+      <section id="project">
+        <h2>study project</h2>
+
+        <!-- 프로젝트1. 이디야 -->
+        <div class="ediya_content">
+
+          <!-- 포트폴리오 소개 -->
+          <section class="ediya_intro">
+            <h2 class="blind">프로젝트1. 이디야</h2>
+
+            <!-- .intro_txt -->
+            <article class="intro_txt">
+              <h3>이디야 <small>ediya</small></h3>
+              <p class="sub_txt">코딩 처음 배우면서 제작한 리뉴얼 사이트</p>
+
+              <!-- 포트폴리오 작업방법 설명 -->
+              <div class="detail">
+                <div class="subtitle">
+                  <p>작업시간</p>
+                  <p>기여도</p>
+                  <p>skill</p>
+                  <p>사이트 주소</p>
+                </div>
+                <div class="intro_content">
+                  <p>2022.12 &#45; 2023&#46;01</p>
+                  <p>1인 100%</p>
+                  <p>figma&#44; HTML&#44; Sass&#44; javascript&#44; 반응형</p>
+                  <p><a href="https://ornate-sorbet-7af1cf.netlify.app/html/01_ediya_main.html">이디야(리뉴얼)</a></p>
+                </div>
+              </div>
+
+              <!-- 포트폴리오 제작기 소개 -->
+              <div class="project_explanation">
+                <p>처음 디자인과 코딩을 배우면서 제작한 웹사이트입니다&#46; 처음 배우면서 제작한 사이트로 메인페이지&#44; about 페이지&#44; login 페이지로 서브페이지를 많이 넣고자 노력했습니다&#46;
+                  사이트의 주목적이 고객과 창업을 희망하는 사람들에게 정보를 전달하는 것이라 생각되어 정보전달에 취중하여 제작했습니다&#46;
+                  대표적 기능은 viewport 광고를 스와이프 기능을 이용했고 to top 기능을 넣어 맨 밑에서 바로 위로 올라갈 수 있도록했습니다&#46; login 페이지에 mobile 디바이스의 크기 이슈로 &#147;이디야 멤버십 가입 정보 찾기&#147; 버튼을 누르면 팝업 창이 뜨도록 제작했습니다&#46;
+                  메인 예고편과 등장인물을 쉽고 빠르게 소개하고 같은 제작사와 작가의 작품을 소개&#44; 마지막으로 영화를 시청할 수 있는 사이트와 연결시켜주는 서비스를 제공하고 있는 웹사이트입니다&#46;
+                </p>
+              </div>
+            </article> <!-- // .intro_txt -->
+
+            <!-- 포트폴리오 목업 -->
+            <article class="mockup">
+              <img src="../img/ediya_mockup.png" alt="포트폴리오 사이트 목업">
+              <p style="color: #bbb; font-size: 12px;">
+                * 해당 사이트는 코딩을 공부하며 제작한 사이트로 가이드라인을 작성하지 않았습니다.
+              </p>
+            </article> <!-- // .mokup -->
+          </section> <!-- // .project_intro -->
+        </div> <!-- // 프로젝트1.이디야 -->
+
+        <!-- 프로젝트2. 포트폴리오 -->
+        <div class="portfolio_content">
+          <h2>project</h2>
+
+          <!-- 포트폴리오 소개 -->
+          <section class="project_intro">
+            <h2 class="blind">프로젝트2. 포트톨리오 소개</h2>
+
+            <!-- .intro_txt -->
+            <article class="intro_txt">
+              <h3>자기소개 포트폴리오</h3>
+              <p class="sub_txt">이력서 제출용으로 제작된 첫번째 자기소개 포트폴리오</p>
+
+              <!-- 포트폴리오 작업방법 설명 -->
+              <div class="detail">
+                <div class="subtitle">
+                  <p>작업시간</p>
+                  <p>기여도</p>
+                  <p>skill</p>
+                </div>
+                <div class="intro_content">
+                  <p>2023&#46;05&#46;23 &#45; 2023&#46;05&#46;28</p>
+                  <p>1인 100%</p>
+                  <p>figma&#44; HTML&#44; Sass&#44; javascript&#44; 반응형</p>
+                </div>
+              </div>
+
+              <!-- 포트폴리오 제작기 소개 -->
+              <div class="project_explanation">
+                <p>저를 한눈에 살펴보고 PR할 수 있는 웹사이트를 제작 및 디자인했습니다&#46; 나를 PR하는 사이트인 만큼 나의 이름 &#145;오현아&#146;를 직관적으로 기억할 수 있도록 사이트명을 &#145;OHA&#146;로 설정하였으며&#44; 나의 장점을 담은 상징의 색상을 이용했습니다&#46; 최대한 깔끔하면서 나에 대한 정보를 한눈에 쉽게 얻을 수 있도록 하였고&#44; 딱딱한 분위기보다 편안함을 위해 자유롭고 톡톡 튈 수 있는 이미지와 자바스크립트를 이용하여 인터랙티브한 디자인을 이용한 웹사이트입니다&#46;</p>
+              </div>
+            </article> <!-- // .intro_txt -->
+
+            <!-- 포트폴리오 목업 -->
+            <article class="mockup">
+              <img src="../img/portfolio_mockup.png" alt="포트폴리오 사이트 목업">
+            </article> <!-- // .mokup -->
+          </section> <!-- // .project_intro -->
+          
+          <!-- 포트폴리오 가이드라인 -->
+          <section class="guide">
+            <h3>guide line</h3>
+
+            <!-- 가이드라인 내용 -->
+            <div class="guide_content">
+              <!-- .logo_part : 로고관련 설명 -->
+              <article class="logo_part">
+                <h4>logo</h4>
+
+                <!-- 로고 -->
+                <div class="logo">
+                  <span class="title_O">O</span><span class="title_H">H</span><span class="title_A">A</span>
+                  <p>영문명인 Oh HyunA에서 O&#44; H&#44; A를 가져와 사용했습니다&#46;</p>
+                </div>
+
+                <div class="mobile_guide">
+                  <!-- 로고 폰트 -->
+                  <div class="logo_font">
+                    <h5>font</h5>
+                    
+                    <div class="font_inner">
+
+                      <!-- 로고에 사용한 폰트 한눈에 보기 -->
+                      <div class="logoFontEx">
+                        <span>동</span>
+                        <div class="font_name">
+                          <p>black han sans</p>
+                          <p>regular</p>
+                        </div>
+                      </div>
+                      
+                      <!-- 폰트 설명 -->
+                      <div class="fontExp">
+                        <p class="explanation">
+                          black han sans는 한국어와 라틴 글꼴을 이용하여 제 이름을 이용한 로고에 강인한 인상을 더하기 위해 선택했습니다&#46;
+                        </p>
+                        <p class="explanation">
+                          해당 글꼴은 fonnt weight가 400 단일 두께로 이루어져있습니다&#46;
+                        </p>
+                        <p class="explanation">
+                          눈에 보기 편안한 크기인 18px로 안정감을 주고자했습니다&#46;
+                        </p>
+                      </div>
+                    </div>
+                  </div> <!-- // 로고 폰트 -->
+                  
+                  <!-- 로고 색상 -->
+                  <div class="font_color">
+                    <h5 class="colorSubTilte">color</h5>
+                    <div class="color_inner">
+
+                      
+                      <!-- 색상 리스트 모형으로 예시 -->
+                      <div class="color_list">
+                        <div class="list_yellow"></div>
+                        <div class="list_bule"></div>
+                        <div class="list_orange"></div>
+                      </div>
+                      
+                      <div class="fontColorExp">
+                        <p>
+                          노란색은 긍정&#44; 희망&#44; 행복을 <br />
+                          파란색은 신뢰&#44; 충성&#44; 성공을 <br />
+                          주황색은 균형&#44; 온화&#44; 활동적임을 뜻합니다&#46; <br />
+                        </p>
+                        <p>
+                          이 3가지 색상으로 제가 가진 장점인 긍정과 희망을 이용하여 신뢰와 성공을 심어주어 IT와 사용자의 균형을 이루겠다는 의미를 담고 있습니다&#46;
+                        </p>
+                      </div> <!-- // 로고 색상 -->
+                    </div>
+                  </div>
+                </div>
+
+              </article> <!-- // .logo_part : 로고관련 설명 -->
+            
+              <!-- .font_part : 포트폴리오에서 사용한 폰트 설명 -->
+              <article class="font_part">
+                <h4>font</h4>
+                <h5>main font</h5>
+                
+                <!-- 포트폴리오에 사용한 폰트 한눈에 보기 -->
+                <div class="font_ex">
+                  <!-- 얇은 굵기 -->
+                  <div class="font_regular">
+                    <span>동</span>
+                    <div class="font_name">
+                      <p>s&#45;core dream</p>
+                      <p>regular</p>
+                    </div>
+                  </div>
+
+                  <!-- 중간 굵기 -->
+                  <div class="font_medium">
+                    <span>동</span>
+                    <div class="font_name">
+                      <p>s&#45;core dream</p>
+                      <p>medium</p>
+                    </div>
+                  </div>
+
+                  <!-- 두꺼운 굵기 -->
+                  <div class="font_bold">
+                    <span>동</span>
+                    <div class="font_name">
+                      <p>s&#45;core dream</p>
+                      <p>bold</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 폰트 사이즈 -->
+                <div class="font_size">
+
+                  <!-- 32px -->
+                  <div class="fontSize32">
+                    <span>32px</span>
+                    <p>에스코어드림</p>
+                  </div>
+
+                  <!-- 30px -->
+                  <div class="fontSize30">
+                    <span>30px</span>
+                    <p>에스코어드림</p>
+                  </div>
+
+                  <!-- 20px -->
+                  <div class="fontSize20">
+                    <span>20px</span>
+                    <p>에스코어드림</p>
+                  </div>
+
+                  <!-- 18px -->
+                  <div class="fontSize18">
+                    <span>18px</span>
+                    <p>에스코어드림</p>
+                  </div>
+
+                  <!-- 16px -->
+                  <div class="fontSize16">
+                    <span>16px</span>
+                    <p>에스코어드림</p>
+                  </div>
+
+                  <!-- 14px -->
+                  <div class="fontSize14">
+                    <span>14px</span>
+                    <p>에스코어드림</p>
+                  </div>
+
+                  <!-- 11px -->
+                  <div class="fontSize11">
+                    <span>11px</span>
+                    <p>에스코어드림</p>
+                  </div>
+                </div>
+              </article> <!-- // .font_part -->
+
+              <!-- .color_part : 포트폴리오에서 사용한 색상 -->
+              <article class="color_part">
+                <h4>color</h4>
+
+                <!-- .color_content -->
+                <div class="icon_inner">
+
+                  <div class="color_content">
+                    <h5 class="colorSubTitle">icon color</h5>
+                    <!-- icon에 사용한 색상 -->
+                    <div class="icon_color">
+
+                      <!-- 노란색상 -->
+                      <div class="icon_yellow">
+                        <div class="yellow_shapes"></div>
+                        <span>&#35;fdd131</span>
+                      </div>
+                      <!-- 파란색상 -->
+                      <div class="icon_bule">
+                        <div class="bule_shapes"></div>
+                        <span>&#35;006da9</span>
+                      </div>
+                      <!-- 주황색상 -->
+                      <div class="icon_orange">
+                        <div class="orange_shapes"></div>
+                        <span>&#35;fb8145</span>
+                      </div>
+                    </div>
+
+                    <!-- 포인트, 배경 색상 -->
+                    <div class="bottom_color">
+
+                      <!-- 포인트로 사용한 색상 -->
+                      <div class="point_color">
+                        <h5 class="colorSubTitle">point color</h5>
+                        <div class="icon_red"></div>
+                        <span>&#35;d71c02</span>
+                      </div>
+
+                      <!-- 배경에 사용한 색상 -->
+                      <div class="background_color">
+                        <h5 class="colorSubTitle">background color</h5>
+                        <div class="icon_white"></div>
+                        <span class="backgroundColorTxt">&#35;fffffc</span>
+                      </div>
+                    </div> <!-- // .bottom_color -->
+                  </div> <!-- // .color_content -->
+                </div>
+                
+                <!-- 버튼에 사용한 색상 -->
+                <div class="button_color">
+                  <h4>button</h4>
+
+                  <div class="button_content">
+                    <div class="resume_btn">이력서</div>
+                    <div class="github_btn" >github</div>
+                    <div class="notion_btn">Notion</div>
+                  </div>
+
+                  <!-- nav에 마우스 올렸을때 색상 -->
+                  <div class="button_hover">
+                    <!-- 원래 -->
+                    <div class="nomal_part">
+                      <h5>nomal</h5>
+                      <div class="nomal_ex">
+                        <span>
+                          s
+                        </span>
+                        <p>
+                          navigation
+                        </p>
+                      </div>
+                    </div> <!-- // 원래 -->
+
+                    <!-- 마우스 올렸을 때 -->
+                    <div class="hover_part">
+                      <h5>hover</h5>
+                      <div class="hover_ex">
+                        <span>
+                          s
+                        </span>
+                        <p>
+                          navigation
+                        </p>
+                      </div>
+                    </div> <!-- // 마우스 올렸을 때 -->
+                  </div> <!-- // .button_hover -->
+                </div> <!-- // button_color -->
+              </article> <!-- // .color_part -->
+            </div> <!-- // .guide_content : 가이드라인 내용 -->
+          </section> <!-- // .guide -->
+          
+          <!-- .pagever_intro : 포트폴리오 페이지 주기능 설명 -->
+          <section class="pagever_intro">
+            <h3>main</h3>
+            <div class="pagever_content">
+              
+              <!-- 페이지 설명 -->
+              <div class="page_explanation">
+                <!-- advantage 설명 레드 라인 -->
+                <div class="arrowLineRed">
+                  <h4>01. head navigation</h4>
+                  <p>내비게이션으로 최대한 깔끔하게 표현하고자 글씨체에 신경을 썼으며 마우스를 올리면 빨간 색상이 나타나고 굵기가 조금 더 두꺼워지도록 했습니다&#46; 내비게이션을 누르면 원하는 위치로 이동합니다&#46;</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="238" height="16" viewBox="0 0 238 16" fill="none">
+                    <path d="M0 8C0 12.4183 3.58172 16 8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8ZM8 9.5H238V6.5H8V9.5Z" fill="#D71C02"/>
+                  </svg>
+                </div>
+                <!-- advantage 설명 블루 라인 -->
+                <div class="arrowLineBlue">
+                  <h4>02.foot navigation</h4>
+                  <p>하단에도 내비게이션을 만들어 이력서 다운로드&#44; github&#44; notion으로 이동할 수 있도록 했으며 마우스가 어디에 위치해있든 상관없이 원하는 페이지로 넘어갈 수 있도록했습니다&#46;</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="181" height="17" viewBox="0 0 181 17" fill="none">
+                    <path d="M0 8.5C0 12.9183 3.58172 16.5 8 16.5C12.4183 16.5 16 12.9183 16 8.5C16 4.08172 12.4183 0.5 8 0.5C3.58172 0.5 0 4.08172 0 8.5ZM8 10H181V7H8V10Z" fill="#006DA9"/>
+                  </svg>
+                </div>
+                <!-- project 설명 노란 라인 -->
+                <div class="arrowLineYellow">
+                  <h4>03.interactive page</h4>
+                  <p>인터랙티브한 디자인으로 마우스를 올리면 하단의 이미지가 흑백에서 컬러로 변경되고 동영상으로 재생됩니다&#46;</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="508" height="16" viewBox="0 0 508 16" fill="none">
+                    <path d="M0 8C0 12.4183 3.58172 16 8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8ZM8 9.5H508V6.5H8V9.5Z" fill="#FDD131"/>
+                  </svg>
+                </div>
+                <!-- guide line 설명 주황 라인 -->
+                <div class="arrowLineOrenge">
+                  <h4>04.semantic markup</h4>
+                  <p>시맨틱 마크업으로 한눈에 보기 편안하도록 짜임새 있는 레이아웃으로 제작했습니다&#46;</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="181" height="16" viewBox="0 0 181 16" fill="none">
+                    <path d="M3.00407e-05 8.02192C0.0121349 12.4402 3.60366 16.0121 8.02192 16C12.4402 15.9879 16.0121 12.3963 16 7.97808C15.9879 3.55982 12.3963 -0.0120748 7.97808 3.00407e-05C3.55982 0.0121349 -0.0120748 3.60366 3.00407e-05 8.02192ZM8.00411 9.49999L181.003 9.02602L180.995 6.02603L7.99589 6.50001L8.00411 9.49999Z" fill="#FB8145"/>
+                  </svg>
+                </div>
+              </div> <!-- // .page_explanation -->
+
+              <!-- 포트폴리오 실제 페이지 사진 -->
+              <div class="portfolio_mockup"></div>
+            </div> <!-- // .pagever_content -->
+          </section> <!-- // .pagever_intro -->
+        </div> <!-- // 프로젝트2. 포트폴리오 소개 -->
+      
+        <!-- 프로젝트3. 마녀배달부키키 -->
+        <div class="kiki_content">
+          
+          <!-- 마녀배달부키키 소개 -->
+          <section class="kikiproject_intro">
+            <h2 class="blind">프로젝트3. 마녀배달부 키키 사이트 소개</h2>
+
+            <!-- 마녀배달부키키 목업 -->
+            <div class="mockup">
+              <img src="../img/kiki_mockup_front.png" alt="마녀배달부키키 사이트 목업">
+            </div>
+
+            <!-- .intro_txt -->
+            <article class="intro_txt">
+              <h3>마녀배달부키키</h3>
+              <p class="sub_txt">영화 ‘마녀배달부키키’를 소개하는 사이트</p>
+
+              <!-- 키키 작업방법 설명 -->
+              <div class="detail">
+                <div class="subtitle">
+                  <p>작업시간</p>
+                  <p>기여도</p>
+                  <p>skill</p>
+                  <p>주소</p>
+                </div>
+                <div class="intro_content">
+                  <p>2024&#46;01&#46;19 &#45; 2024&#46;01&#46;30</p>
+                  <p>1인 100%</p>
+                  <p>figma&#44; HTML&#44; Sass&#44; javascript&#44; 반응형</p>
+                  <p><a src="https://deliverykiki.netlify.app">마녀배달부키키</a></p>
+                </div>
+              </div>
+
+              <!-- 키키 제작기 설명 -->
+              <div class="project_explanation">
+                <p>좋아하는 영화를 소개하고 추천하는 웹사이트를 제작 및 디자인했습니다&#46; 사이트의 이름은 영화 제목을 그대로 가져왔으며 영화 포스터 느낌을 최대한 살려 제작하고자 노력했습니다&#46; 대표적 기능은 메인 예고편과 등장인물을 쉽고 빠르게 소개하고 같은 제작사와 작가의 작품을 소개&#44; 마지막으로 영화를 시청할 수 있는 사이트와 연결시켜주는 서비스를 제공하고 있는 웹사이트입니다&#46;</p>
+              </div>
+            </article> <!-- // .intro_txt -->
+          </section> <!-- // .project_intro -->
+
+          <!-- .guide : 가이드라인 -->
+          <section class="kiki_guide">
+            <h3>guide line</h3>
+            <!-- .guide_content -->
+            <div class="guide_content">
+
+              <!-- .logo_part : 로고 설명 -->
+              <article class="logo_part">
+                <h4>logo</h4>
+                <!-- 로고 -->
+                <div class="kikilogo">
+                  <img src="../img/logo_origin.png" alt="마녀배달부키키 로고">
+                  <p>마녀배달부키키 애니메이션의 포스터에 적힌 이미지를 그대로 가져와 사용했습니다&#46;</p>
+                  <p>출처&#58; <a href="https://blog.naver.com/seonbi1222/222566444881">블로그 신비로운 신비</a></p>
+                </div>
+
+                <!-- 버튼 설명 -->
+                <h5>button</h5>
+                <div class="button_box">
+
+                  <!-- 메뉴 버튼 -->
+                  <div class="kikibutton_content">
+                    <div class="button_img">
+                      <i class="fa-solid fa-burger"></i>
+                    </div>
+                    <div class="font_name">
+                      <p>menu button</p>
+                    </div>
+                  </div>
+
+                  <!-- 지브리 버튼 -->
+                  <div class="kikibutton_content">
+                    <div class="button_img">
+                      <img class="ghi" src="../img/ghibli_studio_logo.png" alt="지브리 페이지 이동 버튼 이미지">
+                    </div>
+                    <div class="font_name">
+                      <p>ghibli button</p>
+                    </div>
+                  </div>
+
+                  <!-- sns 'X' 버튼 -->
+                  <div class="kikibutton_content">
+                    <div class="button_img">
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+                    <div class="font_name">
+                      <p>sns&#39;X&#39; button</p>
+                    </div>
+                  </div>
+
+                  <!-- 넷플릭스 버튼 -->
+                  <div class="kikibutton_content">
+                    <div class="button_img">
+                      <img class="net" src="../img/netflex_logo.png" alt="넷플릭스에서 '마녀배달부키키'보기 페이지 이동 버튼 이미지">
+                    </div>
+                    <div class="font_name">
+                      <p>netflix button</p>
+                    </div>
+                  </div>
+
+                  <!-- 웨이브 버튼 -->
+                  <div class="kikibutton_content">
+                    <div class="button_img">
+                      <img class="wav" src="../img/wavve_logo.png" alt="웨이브에서 '마녀배달부키키'보기 페이지 이동 버튼 이미지">
+                    </div>
+                    <div class="font_name">
+                      <p>wavve button</p>
+                    </div>
+                  </div>
+                </div>
+                <h5>cursor</h5>
+                <div class="cursor_box">
+                  <img src="../img/kiki_cursor.svg" alt="'마녀배달부키키' 마우스 커서 이미지">
+                  <p>키키가 수련을 떠나는 날 아빠로부터 받은 소중한 라디오를 마우스 커서로 설정했으며 편안한 사용을 위해 13도 회전시켰습니다&#46;</p>
+                </div>
+              </article> <!-- // .logo_part : 로고관련 설명 -->
+            
+              <!-- .font_part : 키키에서 사용한 폰트 설명 -->
+              <article class="font_part">
+                <h4>font</h4>
+                <h5>main font</h5>
+
+                <!-- 폰트 한눈에 보기 -->
+                <div class="font_ex">
+
+                  <!-- 얇은 굵기 -->
+                  <div class="font_regular">
+                    <span>동</span>
+                    <div class="font_name">
+                      <p>s&#45;core dream</p>
+                      <p>regular</p>
+                    </div>
+                  </div>
+
+                  <!-- 중간 굵기 -->
+                  <div class="font_medium">
+                    <span>동</span>
+                    <div class="font_name">
+                      <p>s&#45;core dream</p>
+                      <p>medium</p>
+                    </div>
+                  </div>
+
+                  <!-- 두꺼운 굵기 -->
+                  <div class="font_bold">
+                    <span>동</span>
+                    <div class="font_name">
+                      <p>s&#45;core dream</p>
+                      <p>bold</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 키키에서 사용한 폰트 사이즈 -->
+                <div class="font_size">
+
+                  <!-- 96px -->
+                  <div class="fontSize96">
+                    <span>96px</span>
+                    <p>에스코어드림</p>
+                  </div>
+
+                  <!-- 30px -->
+                  <div class="fontSize30">
+                    <span>30px</span>
+                    <p>에스코어드림</p>
+                  </div>
+
+                  <!-- 20px -->
+                  <div class="fontSize20">
+                    <span>20px</span>
+                    <p>에스코어드림</p>
+                  </div>
+
+                  <!-- 18px -->
+                  <div class="fontSize18">
+                    <span>18px</span>
+                    <p>에스코어드림</p>
+                  </div>
+
+                  <!-- 16px -->
+                  <div class="fontSize16">
+                    <span>16px</span>
+                    <p>에스코어드림</p>
+                  </div>
+
+                  <!-- 14px -->
+                  <div class="fontSize14">
+                    <span>14px</span>
+                    <p>에스코어드림</p>
+                  </div>
+
+                  <!-- 12px -->
+                  <div class="fontSize12">
+                    <span>12px</span>
+                    <p>에스코어드림</p>
+                  </div>
+                  <p class="small_exp">&#42;96px은 편의상 44px로 대체하여 표시</p>
+                </div>
+              </article> <!-- // .font_part -->
+
+              <!-- .color_part : 키키에서 사용한 폰트 설명 -->
+              <article class="color_part">
+                <h4>color</h4>
+                <div class="color_content">
+
+                  <!-- 키키 배경에 사용한 색상 -->
+                  <h5 class="kiki_SubTitle">background color</h5>
+                  
+                  <!-- 한눈에 보기 -->
+                  <div class="back_color">
+                    <!-- 초록색상 -->
+                    <div class="back_content">
+                      <div class="green_shapes"></div>
+                      <span>&#35;0a4b41</span>
+                    </div>
+                    <!-- 파란색상 -->
+                    <div class="back_content">
+                      <div class="blue_shapes"></div>
+                      <span>&#35;1145a2</span>
+                    </div>
+                    <!-- 베이지색상 -->
+                    <div class="back_content">
+                      <div class="bagie_shapes"></div>
+                      <span>&#35;d7dac7</span>
+                    </div>
+                    <!-- 블랙색상 -->
+                    <div class="back_content">
+                      <div class="black_shapes"></div>
+                      <span>&#35;000000</span>
+                    </div>
+                    <!-- 하늘색상 -->
+                    <div class="back_content">
+                      <div class="skyBule_shapes"></div>
+                      <span>&#35;b7cae8</span>
+                    </div>
+                    <!-- 보라색상 -->
+                    <div class="back_content">
+                      <div class="purple_shapes"></div>
+                      <span>&#35;4f4259</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 키키에서 포인트로 사용한 색상과 폰트 -->
+                <div class="point_part">
+                  <h4>point color & font</h4>
+                  <!-- 포인트 색상 -->
+                  <div class="kikiPointColor">
+                    <div class="kikiPointContent">
+                      <h5 class="colorSubTitle">point color</h5>
+                      <div class="back_red">
+                        <div class="red_shapes"></div>
+                        <span>&#35;d71e15</span>
+                      </div>
+                    </div>
+
+                    <!-- 포인트 폰트 -->
+                    <div class="kikiPointfont">
+                      <h5 class="colorSubTitle">background color</h5>
+                      <div class="font_bold">
+                        <span>동</span>
+                        <div class="font_name">
+                          <p>Y&#45;sportlight</p>
+                          <p>regular</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 키키에서 사용한 폰트 크기 예시 -->
+                  <div class="pointFontSize">
+                    <span>32px</span>
+                    <p>y 너만을 비춤체</p>
+                  </div>
+                </div>
+              </article> <!-- // .color_part -->
+            </div> <!-- // .guide_content -->
+          </section> <!-- // .guide : 가이드라인 -->
+
+          <!-- 키키 페이지 주기능 설명 -->
+          <section class="pagever_intro">
+            <h3>main</h3>
+            <div class="kikipagever_content">
+              <!-- 키키 실제 페이지 이미지 -->
+              <div class="kiki_mockup"></div>
+              <div class="page_explanation">
+                <div class="arrowLineDWRed">
+                  <h4>01.hambuger menu</h4>
+                  <p>실제로 햄버거모양의 아이콘을 이용하여 조금 더 동화적 이미지를 표현했으며 javascript를 이용해 메뉴를 누르면 내비게이션이 나오도록 설정했습니다&#46;</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="508" height="16" viewBox="0 0 608 16" fill="none">
+                    <path d="M592 8C592 12.4183 595.582 16 600 16C604.418 16 608 12.4183 608 8C608 3.58172 604.418 0 600 0C595.582 0 592 3.58172 592 8ZM0 9.5H600V6.5H0V9.5Z" fill="#D71E15"/>
+                  </svg>
+                </div>
+                <div class="arrowLineBeige">
+                  <h4>02.slides with jQuery</h4>
+                  <p>실제로 주요 인물들이 7명정도 되기 때문에 아래로 나열하면 공간차지가 있을 뿐만 아니라 사용자가 정보를 얻는데에 지루함을 느낄 수 있기 때문에 jQuery를 이용해서 양옆 빨간 버튼을 누르면 등장인물 카드가 나오도록 했습니다&#46;</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="181" height="16" viewBox="0 0 181 16" fill="none">
+                    <path d="M165 8C165 12.4183 168.582 16 173 16C177.418 16 181 12.4183 181 8C181 3.58172 177.418 0 173 0C168.582 0 165 3.58172 165 8ZM0 9.5H173V6.5H0V9.5Z" fill="#D7DAC7"/>
+                  </svg>
+                </div>
+                <div class="arrowLineGreen">
+                  <h4>03.gallery with javascript</h4>
+                  <p>영화 '마녀배달부키키'의 still cut을 정렬한 갤러리로 하단의 작은 이미지를 누르면 메인에 큰 이미지로 나타납니다&#46; 이 또한 javascript를 이용했습니다&#46;</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="253" height="17" viewBox="0 0 313 17" fill="none">
+                    <path d="M296.999 8.1863C297.011 12.6046 300.603 16.1765 305.021 16.1644C309.439 16.1523 313.011 12.5607 312.999 8.14247C312.987 3.72421 309.395 0.152312 304.977 0.164417C300.559 0.176522 296.987 3.76804 296.999 8.1863ZM0.00410957 10.5L305.003 9.66438L304.995 6.66439L-0.00410957 7.50001L0.00410957 10.5Z" fill="#0A4B41"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div> <!-- // 프로젝트3.마배달부키키 -->
+
+        <!-- 프로젝트4. 파묘 -->
+        <div class="exhuma_content">
+  
+          <!-- 파묘 소개 -->
+          <section class="exhumaproject_intro">
+            <h2 class="blind">프로젝트3. 파묘 영화 소개 사이트</h2>
+
+            <!-- 파묘 목업 -->
+            <div class="mockup">
+              <img src="../img/exhuma_mockup.png" alt="파묘 사이트 목업">
+            </div>
+
+            <!-- .intro_txt -->
+            <article class="intro_txt">
+              <h3>파묘</h3>
+              <p class="sub_txt">영화 ‘파묘’를 소개하는 사이트</p>
+
+              <!-- 키키 작업방법 설명 -->
+              <div class="detail">
+                <div class="subtitle">
+                  <p>작업시간</p>
+                  <p>기여도</p>
+                  <p>skill</p>
+                  <p>주소</p>
+                </div>
+                <div class="intro_content">
+                  <p>2024&#46;03&#46;25 &#45; 2024&#46;03&#46;29</p>
+                  <p>1인 100%</p>
+                  <p>figma&#44; HTML&#44; Sass&#44; javascript&#44; 반응형</p>
+                  <p><a src="https://exhuma.netlify.app">파묘</a></p>
+                </div>
+              </div>
+
+              <!-- 파묘 제작기 설명 -->
+              <div class="project_explanation">
+                <p>최신 영화를 소개하고 추천하는 웹사이트를 제작 및 디자인했습니다&#46; 사이트의 이름은 영화 제목을 그대로 가져왔으며 영화 포스터 느낌을 최대한 살려 제작하고자 노력했습니다&#46; 대표적 기능은 메인 화면 상단에 영화를 예매할 수 있는 사이트를 연결시켜다&#46; 그리고 메뉴에서 줄거리와 등장인물&#44; 사진첩을 볼 수 있는 공간으로 이동할 수 있도록 했습니다&#46; 사진첩은 자바스크립트를 이용하여 사진을 옆으로 넘기면서 볼 수 있도록 했습니다&#46;</p>
+              </div>
+            </article> <!-- // .intro_txt -->
+          </section> <!-- // .project_intro -->
+
+          <section class="guide">
+            <h3>guide line</h3>
+
+            <!-- 가이드라인 내용 -->
+            <div class="guide_content">
+              <!-- .logo_part : 로고관련 설명 -->
+              <article class="left_part">
+                
+                <!-- 로고 -->
+                <div class="Bposter">
+                  <h4>back poster</h4>
+                  <p>
+                    background로 사용한 포스터들을 모아놨습니다&#46; <br />
+                    <small>모든 포스터의 출처는 네이버 파묘 소개 포스터에서 가져왔습니다&#46;</small>
+                  </p>
+                  <div class="Bposter_img">
+                    <img src="../img/exhuma_poster.jpg" alt="파묘 글씨가 지워진 메인 포스터">
+                    <img src="../img/exhuma_back.jpg" alt="파묘 글씨와 인물이 모두 지워진 메인 포스터">
+                    <img src="../img/exhuma_tree.jpg" alt="파묘 글씨가 지워진 나무 사진이 있는 포스터">
+                  </div>
+                </div>
+
+                <!-- 로고 색상 -->
+                <div class="font_color">
+                  <h4>color</h4>
+                  <div class="color_inner">
+                    
+                    <!-- 색상 리스트 모형으로 예시 -->
+                    <div class="exhuma_color">
+                      <!-- 청록색상 -->
+                      <div class="exhuma_green">
+                        <div class="green_shapes"></div>
+                        <span>#335D6A</span>
+                      </div>
+                      <!-- 빨간색상 -->
+                      <div class="exhuma_red">
+                        <div class="red_shapes"></div>
+                        <span>#D71E15</span>
+                      </div>
+                      <!-- 검정색상 -->
+                      <div class="exhuma_black">
+                        <div class="black_shapes"></div>
+                        <span>#000000</span>
+                      </div>
+                    </div>
+                    
+                    <div class="fontColorExp">
+                      <p>
+                        파묘 포스터에서 주로 사용한 청록색&#44; <br />
+                        피를 연상하게 하므로서 공포스러운 분위기의 빨간색&#44; <br />
+                        음침하고 어두운 분위기를 만들어내는 검정색을 사용했습니다&#46; <br />
+                      </p>
+                      <p>
+                        이 3가지 색상을 사용하여 청록색으로는 포인트를 주었고 빨간색은 버튼 위에 마우스를 올리거나 글자를 드래그 했을 때 보이도록 했으며 검정색은 배경색상으로 사용했습니다&#46;
+                      </p>
+                    </div> <!-- // 로고 색상 -->
+                  </div>
+                </div>
+              </article> <!-- // .right_part : 로고관련 설명 -->
+            
+              <!-- .font_part : 포트폴리오에서 사용한 폰트 설명 -->
+              <article class="middle_part">
+                <!-- 폰트 -->
+                <div class="exhuma_font">
+                  <h4>font</h4>
+                  
+                  <div class="font_inner">
+
+                    <!-- 로고에 사용한 폰트 한눈에 보기 -->
+                    <div class="logoFontEx">
+                      <span>동</span>
+                      <div class="font_name">
+                        <p>김좌진 장군체</p>
+                        <p>regular</p>
+                      </div>
+                    </div>
+                    
+                    <!-- 폰트 설명 -->
+                    <div class="fontExp">
+                      <p class="explanation">
+                        김좌진장군체는 2020년 세븐일레븐에서 청산리전투 승전 100주년과 574돌 한글날을 맞아 선보인 글씨체로 파묘 포스터와 동일한 글씨체로 선정했습니다&#46;
+                      </p>
+                      <p class="explanation">
+                        김좌진 장군의 붓글씨에서 모티브를 얻어 한글의 구조와 맞게 정돈 후 활자화 하여 개발한 글씨체입니다&#46;
+                      </p>
+                      <p class="explanation">
+                        해당 글꼴은 font weight가 600과 300 두께로 이루어져있습니다&#46;
+                      </p>
+                    </div>
+                  </div>
+                </div> <!-- // 폰트 -->
+
+                <!-- 포트폴리오에 사용한 폰트 한눈에 보기 -->
+                <div class="font_ex">
+                  <h4>main font</h4>
+                  <!-- 얇은 굵기 -->
+                  <div class="font_regular">
+                    <span>동</span>
+                    <div class="font_name">
+                      <p>김좌진장군체</p>
+                      <p>regular</p>
+                    </div>
+                  </div>
+
+                  <!-- 중간 굵기 -->
+                  <div class="font_bold">
+                    <span>동</span>
+                    <div class="font_name">
+                      <p>김좌진장군체</p>
+                      <p>bold</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- nav에 마우스 올렸을때 색상 -->
+                <div class="button_hover">
+                  <!-- 원래 -->
+                  <div class="nomal_part">
+                    <h5>nomal</h5>
+                    <div class="nomal_ex">
+                      <span>
+                        s
+                      </span>
+                      <p>
+                        navigation
+                      </p>
+                    </div>
+                  </div> <!-- // 원래 -->
+
+                  <!-- 마우스 올렸을 때 -->
+                  <div class="hover_part">
+                    <h5>hover</h5>
+                    <div class="hover_ex">
+                      <span>
+                        s
+                      </span>
+                      <p>
+                        navigation
+                      </p>
+                    </div>
+                  </div> <!-- // 마우스 올렸을 때 -->
+                </div> <!-- // .button_hover -->
+              </article> <!-- // .middle_part -->
+
+              <!-- .color_part : 포트폴리오에서 사용한 색상 -->
+              <article class="fontSize_part">
+                <h4>font size</h4>
+
+                <!-- 폰트 사이즈 -->
+                <div class="font_size">
+
+                  <!-- 170px -->
+                  <div class="fontSize170">
+                    <span>170px</span>
+                    <p>김좌진장군체</p>
+                  </div>
+
+                  <!-- 140px -->
+                  <div class="fontSize140">
+                    <span>140px</span>
+                    <p>김좌진장군체</p>
+                  </div>
+
+                  <!-- 40px -->
+                  <div class="fontSize40">
+                    <span>40px</span>
+                    <p>김좌진장군체</p>
+                  </div>
+
+                  <!-- 32px -->
+                  <div class="fontSize32">
+                    <span>32px</span>
+                    <p>김좌진장군체</p>
+                  </div>
+
+                  <!-- 24px -->
+                  <div class="fontSize24">
+                    <span>24px</span>
+                    <p>김좌진장군체</p>
+                  </div>
+
+                  <!-- 20px -->
+                  <div class="fontSize20">
+                    <span>20px</span>
+                    <p>김좌진장군체</p>
+                  </div>
+
+                  <!-- 16px -->
+                  <div class="fontSize16">
+                    <span>16px</span>
+                    <p>김좌진장군체</p>
+                  </div>
+
+                  <!-- 14px -->
+                  <div class="fontSize14">
+                    <span>14px</span>
+                    <p>김좌진장군체</p>
+                  </div>
+                </div>
+              </article> <!-- // .color_part -->
+            </div> <!-- // .guide_content : 가이드라인 내용 -->
+          </section> <!-- // .guide -->
+        </div>
+      </section> <!-- // #project -->
+
+      <!-- #contact -->
+      <section id="contact">
+        <h2>contact</h2>
+        <!-- 마지막 페이지 이미지 : css에서 삽입 -->
+        <div class="img_container"></div>
+        <p>thank you for watching</p>
+
+        <!-- 연락처 -->
+        <div class="personal_data">
+          <p>oh hyuna</p>
+          <a href="tel:01064815231">010&#46;6481&#46;5231</a>
+          <a href="mailto:gusdk99323&#64;gmail.com">gusdk99323&#64;gmail&#46;com</a>
+        </div>
+      </section> <!-- // #contact -->
+    </main> <!-- // main -->
+
+    <!-- #footBox -->
+    <footer id="footBox">
+      <div class="footinner">
+        <!-- 내비게이션 내용 -->
+        <div class="fnb_container">
+          <!-- 로고 -->
+          <h1><a href="./portfolio.html">OHA</a></h1>
+          <div class="verical_divider"></div>
+          <nav class="fnb">
+            <h2 class="blind">하단내비게이션</h2>
+            
+            <!-- home -->
+            <input type="button" id="home_Fbtn" value="home" class="blind">
+            <label for="home_Fbtn">
+              <a href="#home">home</a>
+            </label>
+            
+            <!-- introduce -->
+            <input type="button" id="introduce_Fbtn" value="introduce" class="blind">
+            <label for="introduce_Fbtn">
+              <a href="#introduce">introduce</a>
+            </label>
+            
+            <!-- advantage -->
+            <input type="button" id="advantage_Fbtn" value="advantage" class="blind">
+            <label for="advantage_Fbtn">
+              <a href="#advantage">advantage</a>
+            </label>
+            
+            <!-- project -->
+            <input type="button" id="project_Fbtn" value="project" class="blind">
+            <label for="project_Fbtn">
+              <a href="#project">project</a>
+            </label>
+            
+            <!-- contact -->
+            <input type="button" id="contact_Fbtn" value="contact" class="blind">
+            <label for="contact_Fbtn">
+              <a href="#contact">contact</a>
+            </label>
+          </nav>
+
+          <!-- 각종 링크 버튼(이력서, 깃허브, 노션) -->
+          <div class="link_btn">
+            <a class="resume_btn" href="../download/frontend_OHhyuna.pdf" download="&#91;프론트엔드개발자&#93;자기소개서_오현아">이력서</a>
+            <a class="github_btn" href="https://github.com/hyuna99323" target="_blank">github</a>
+            <a class="notion_btn" href="https://www.notion.so/Oh-Hyuna-a4fcd0435ef64866984947b012ee0d34?pvs=4" target="_blank">Notion</a>
+          </div>
+        </div>
+      </div>
+    </footer> <!-- // #footBox -->
+  </div>
+
+  <!-- script -->
+  <script defer src="../js/src/ie.js"></script>
+	<script defer src="../js/src/flexbase.js"></script>
+	<script src="../js/src/moblie_menu.js"></script>
+  
+</body>
+</html>

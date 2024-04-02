@@ -1,0 +1,259 @@
+// #introduce
+#introduce {
+  width: 100%;
+  height: 100%;
+  padding: 3.125% 7.813%;
+
+  h2 {
+    @include h2;
+    padding: 0;
+  }
+
+  // .about_inner
+  @at-root .about_inner {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+
+    @include mobile() {
+      margin-top: 18px;
+      flex-wrap: wrap;
+    }
+    
+    @at-root .about_left {
+      width:  41.204%;
+
+      @include mobile() {
+        width: 100%;
+      }
+
+      @at-root .greeting {
+        width: auto;
+        height: auto;
+        padding-bottom: 23px;
+
+        p {
+          font-size: map-get($map: $font_size, $key: pointcontent);
+          font-weight: $font_weight_medium;
+
+          @include mobile() {
+            font-size: map-get($map: $font_size_m, $key: pointcontent);
+          }
+
+          @include tablet() {
+            font-size: map-get($map: $font_size_m, $key: pointcontent);
+          }
+        }
+        @include tablet() {
+          width: 100%;
+          height: auto;
+        }
+      } // --- .greeting
+
+      // .id_picture
+      @at-root .id_picture {
+        width: 232px;
+        height: 232px;
+        margin-top: 15px;
+        border-radius: 50%;
+        background-image: url(../../img/introduceImg.JPG);
+        background-size: 246px 300px;
+
+        @include mobile() {
+          margin: auto;
+        }
+
+        @include tablet() {
+          width: 210px;
+          height: 210px;
+          background-size: 240px 300px;
+        }
+      }
+      @at-root .sort_introduce {
+        width: 66.967%;
+        height: auto;
+        margin-top: 30px;
+
+        span {
+          font-size: map-get($map: $font_size, $key: content1);
+
+          @include mobile() {
+            font-size: map-get($map: $font_size_m, $key: content1);
+          }
+
+          @include tablet() {
+            font-size: map-get($map: $font_size_m, $key: content1);
+          }
+        }
+
+        @include mobile() {
+          width: 100%;
+          height: auto;
+          margin-top: 0px;
+          line-height: 21px;
+          margin-top: 12.293%;
+        }
+
+        @include tablet() {
+          width: 100%;
+          height: auto;
+          line-height: 20px;
+        }
+      } // --- .sort_introduce
+
+      @include tablet() {
+        width: 36.609%;
+      }
+    } // --- .about_left
+
+    // .about_midle
+    @at-root .about_middle {
+      width: 29.167%;
+
+      @include mobile() {
+        width: 100%;
+      }
+
+      article h3 {
+        @include h3;
+        margin-top: 46px;
+
+        @include mobile() {
+          margin-top: 11.499%;
+        }
+      }
+      .profile h3 {
+        margin-top: 28.573%;
+
+        @include mobile() {
+          margin-top: 10.257%;
+        }
+
+        @include tablet() {
+          margin-top: 15px;
+        }
+      }
+      p {
+        margin-top: 4.764%;
+        line-height: 22px;
+        font-size: map-get($map: $font_size, $key: content1);
+
+        @include mobile() {
+          font-size: map-get($map: $font_size_m, $key: content1);
+        }
+
+        @include tablet() {
+          margin-top: 4.6%;
+          font-size: map-get($map: $font_size_m, $key: content1);
+        }
+      }
+
+      @include tablet() {
+        width: 32.614%;
+        margin-top: 7.486%;
+      }
+    } // --- .about_midle
+
+    // .about_right
+    @at-root .about_right {
+      width: 28.704%;
+
+      @include mobile() {
+        width: 100%;
+        // display: none;
+      }
+
+      @at-root .skill {
+        margin-top: 28.573%;
+        display: flex;
+        justify-content: end;
+
+        @include mobile() {
+          margin-top: 30px;
+          justify-content: flex-start;
+        }
+
+        @at-root .skill_title {
+          width: 21.292%;
+          height: auto;      
+          font-size: map-get($map: $font_size, $key: content1);
+          font-weight: $font_weight_bold;
+
+          @include tablet() {
+            width: auto;
+            height: auto;
+            font-size: map-get($map: $font_size_m, $key: content1);
+          }
+        }
+        @at-root .skill_title span:first-child::after {
+          content: '';
+          width: 13px;
+          margin: 10px 0;
+          display: block;
+          flex-grow: 1;
+          font-size: 0px;
+          line-height: 0px;
+          border: 1px solid #000
+        }
+
+        // .skillBox
+        @at-root .skillBox {
+          display: flex;
+          flex-direction: column;
+
+          @at-root .skill_inner {
+            width: auto;
+            display: flex;
+            margin: 13.7% 0;
+            
+            p {
+              font-size: map-get($map: $font_size, $key: content1);
+
+              @include mobile() {
+                font-size: map-get($map: $font_size_m, $key: content1);
+              }
+            }
+
+            @at-root .checkbox {
+              width: 18px;
+              height: 18px;
+              line-height: 24px;
+              border: 1px solid #cdcdcd;
+              margin-right: 14px;
+            }
+
+            @include tablet() {
+              margin: 13.7% 0;
+            }
+          } // --- .skill_inner
+          .skill_inner:first-child{
+            margin-top: 0;
+          }
+
+        } // --- .skillBox
+
+        @include tablet() {
+          margin-top: 50.102%;
+          gap: 6%;
+        }
+      } // --- .skill
+
+      @include tablet() {
+        width: 20.959%;
+      }
+    } // --- .about_right
+
+    @include tablet() {
+      height: -webkit-fill-available;
+      gap: 5%;
+    }
+  } // --- .about_inner
+
+  @include mobile() {
+    padding: 2.188% 3.125%;
+  }
+
+  @include tablet() {
+    padding: 3.907% 6.511%;
+  }
+} // --- #introduce

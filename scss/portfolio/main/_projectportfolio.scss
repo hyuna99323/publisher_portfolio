@@ -1,0 +1,911 @@
+@at-root .portfolio_content {
+  margin-top: 2.5%;
+  padding: 3.125% 7.813% 0;
+  border-bottom: 1px solid #ddd;
+
+  h2{ 
+    padding: 0 0 92px 0;
+  }
+
+  // 프로젝트 설명
+  @at-root .project_intro {
+    @include projectIntro();
+
+    @include introTxt();
+
+    @include guideMockup();
+
+    @include tablet() {
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+  } // --- project_intro - 프로젝트 설명
+
+  // .guide - 가이드라인 
+  @at-root .guide {
+    @include guideBox();
+    color: $color_black;
+
+    h3 {
+      @include guidelineh3 ();
+    }
+
+    // .guide_content - 포트폴리오 프로젝트 설명
+    @at-root .guide_content {
+      @include guideflex();
+
+      @at-root .logo_part {
+        @include guidelogoContent();
+
+
+        h4 {
+          @include h4();
+        }
+        @at-root .logo {
+          @include logoMargin();
+
+          span{
+            font-weight: $font_weight_regular;
+            font-family: $font-family_black;
+            font-size: map-get($map: $font_size, $key: projectsub);
+            letter-spacing: 9px;
+          }
+
+          .title_O {
+            color: $color_yellow;
+          }
+          .title_H {
+            color: $color_blue;
+          }
+          .title_A {
+            color: $color_orange;
+          }
+
+          p {
+            @include logoInP();
+          }
+        } // --- .logo
+
+        @at-root .mobile_guide {
+          @include tablet() {
+            display: flex;
+          }
+
+          h5 {
+            @include h5();
+            margin-top: 26.9%;
+            margin-left: 1.433%;
+
+            @include mobile() {
+              margin-top: 6.6667%;
+              margin-left: 0px;
+            }
+
+            @include tablet() {
+              margin-top: 12.16%;
+            }
+          }
+
+          // .logo_font
+          @at-root .logo_font {
+
+            
+            @at-root .font_inner {
+              width: 97.295%;
+              margin-top: 2.863%;
+              margin-left: 1.433%;
+              display: flex;
+              gap: 3.9%;
+
+              @at-root .logoFontEx {
+                width: 34.176%;
+                height: 22.395vh;
+                border: 1.5px solid $color_grayC;
+                border-radius: 4px;
+
+                span {
+                  width: 100%;
+                  height: 14.648vh;
+                  display: block;
+                  font-family: $font-family_black;
+                  font-size: 36px;
+                  text-align: center;
+                  line-height: 14.648vh;
+
+                  @include mobile() {
+                    height: 88px;
+                    line-height: 88px;
+                  }
+
+                  @include tablet() {
+                    height: 11.972vh;
+                    line-height: 90px;
+                  }
+                }
+                @at-root .font_name {
+                  @include fontName();
+                  p:last-child {
+                    font-size: map-get($map: $font_size, $key: content2);
+                    font-weight: $font_weight_regular;
+                  }
+                } // --- .font_name - 폰트명
+
+                @include mobile() {
+                  width: 86px;
+                  height: 128px;
+                }
+
+                @include tablet() {
+                  height: 18.874vh;
+                }
+              } // --- .logoFontEx - 폰트 예시 이미지
+
+              @include mobile() {
+                width: auto;
+                margin-top: 3.334%;
+                margin-left: 1.667%;
+              }
+              @include tablet() {
+                width: auto;
+                margin-top: 3.648%;
+              }
+            }
+
+            // .fontExp
+            @at-root .fontExp {
+              width: 61.765%;
+              height: auto;
+
+              .explanation {
+                font-size: map-get($map: $font_size, $key: content1);
+
+                @include mobile() {
+                  font-size: map-get($map: $font_size_m, $key: content1);
+                }
+
+                @include tablet() {
+                  font-size: map-get($map: $font_size_m, $key: content1);
+                }
+              }
+
+              .explanation:nth-last-child(-n+2) {
+                // font-size: map-get($map: $font_size, $key: content1);
+                margin-top: 12px;
+
+                @include mobile() {
+                  margin-top: 9px;
+                }
+              }
+
+              @include mobile() {
+                width: 67.12%;
+                height: auto;
+              }
+
+              @include tablet() {
+                width: 61.878%;
+              }
+            } // --- .fontExp = 글꼴 설명
+
+            @include mobile() {
+              width: 100%;
+              gap: 8px;
+            }
+
+            @include tablet() {
+              width: 50%;
+            }
+          } // --- .logo_font
+
+          
+          @at-root .font_color {
+
+            .colorSubTilte {
+              @include h5();
+              margin: 62px 0 20px 5px;
+
+              @include mobile() {
+                margin: 6.667% 0 3.3335% 0;
+              }
+
+              @include tablet() {
+                margin-top: 24px;
+              }
+            }
+            @at-root .color_inner {
+              width: 100%;
+              margin-left: 5px;
+              display: flex;
+              flex-wrap: wrap;
+
+              // .color_list
+              @at-root .color_list {
+                display: flex;
+
+                .list_yellow {
+                  width: 22px;
+                  height: 22px;
+                  margin-right: 14px;
+                  border-radius: 50%;
+                  background: $color_yellow;
+                }
+
+                .list_bule {
+                  width: 22px;
+                  height: 22px;
+                  margin-right: 14px;
+                  background: $color_blue;
+                }
+
+                .list_orange {
+                  width: 0px;
+                  height: 0px;
+                  border-bottom: 22px solid #FB8145;
+                  border-left: 12px solid transparent;
+                  border-right: 12px solid transparent;
+                }
+              } // --- .color_list
+
+
+              // .fontColorExp
+              @at-root .fontColorExp {
+                margin-top: 10px;
+                p {
+                  font-size: map-get($map: $font_size, $key: content1);
+                
+                  @include mobile() {
+                    font-size: map-get($map: $font_size_m, $key: content1);
+                  }
+                
+                  @include tablet() {
+                    font-size: map-get($map: $font_size_m, $key: content1);
+                  }
+                }
+                p:last-child {
+                  margin-top: 12px;
+                
+                  @include mobile() {
+                    margin-top: 8px;
+                  }
+                }
+
+                @include tablet() {
+                  margin-top: 3.235%;
+                }
+              } // --- .fontColorExp
+
+              @include mobile() {
+                margin-left: 1.667%;
+              }
+
+              @include tablet() {
+                margin-left: 1.617%;
+              }
+            }
+
+            @include tablet() {
+              width: 47%;
+            }
+          } // --- .font_color - 폰트 색상
+
+          @include tablet() {
+            display: flex;
+            gap: 3%;
+          }
+        }
+      } // --- .logo_part - 로고 가이드라인
+    
+      // .font_part
+      @at-root .font_part {
+        @include fontPartBox(); // --- .font_size - 폰트 사이즈 가이드라인
+        
+        .fontSize32 {
+          p {
+            font-size: map-get($map: $font_size, $key: projecttitle);
+            letter-spacing: 10px;
+          }
+        } // --- .fontSize32
+
+        .fontSize11 {
+          @include fontSizeEx();
+    
+          p {
+            font-size: map-get($map: $font_size, $key: fnb);
+            letter-spacing: 10px;
+          }
+        } // --- .fontSize11
+      } // --- .font_part - 폰트 설명 
+
+      // color_part - 가이드라인 color부분
+      @at-root .color_part {
+        @include colorPartBox();
+        
+        h4 {
+          @include h4();
+        }
+        @at-root .icon_inner {
+
+          @at-root .color_content {
+            @include colorPartBox();
+            width: 100%;
+            margin-top: 18px;
+          
+            .colorSubTitle {
+              @include h5();
+            }
+
+            span {
+              @include ColorRgbTxt();
+            }
+
+            // .icon_color
+            @at-root .icon_color {
+              width: 100%;
+              margin-top: 18px;
+              display: flex;
+              gap: 50px;
+            
+              @at-root .icon_yellow {
+                display: flex;
+                row-gap: 10px;
+                flex-direction: column;
+              
+                .yellow_shapes {
+                  width: 60px;
+                  height: 60px;
+                  border-radius: 50%;
+                  background-color: $color_yellow;
+
+                  @include mobile() {
+                    width: 78px;
+                    height: 78px;
+                  }
+
+                  @include pcfull() {
+                    width: 80px;
+                    height: 80px;
+                  }
+                }
+              } // --- .icon_yellow
+
+              // .icon_bule
+              @at-root .icon_bule {
+                display: flex;
+                row-gap: 10px;
+                flex-direction: column;
+
+                .bule_shapes {
+                  width: 60px;
+                  height: 60px;
+                  border-radius: 50%;
+                  background-color: $color_blue;
+
+                  @include mobile() {
+                    width: 78px;
+                    height: 78px;
+                  }
+
+                  @include pcfull() {
+                    width: 80px;
+                    height: 80px;
+                  }
+                }
+              } // --- .icon_bule
+
+              // .icon_orange
+              @at-root .icon_orange {
+                display: flex;
+                row-gap: 10px;
+                flex-direction: column;
+              
+                .orange_shapes {
+                  width: 60px;
+                  height: 60px;
+                  border-radius: 50%;
+                  background-color: $color_orange;
+
+                  @include mobile() {
+                    width: 78px;
+                    height: 78px;
+                  }
+
+                  @include pcfull() {
+                    width: 80px;
+                    height: 80px;
+                  }
+                }
+              } // --- .icon_orange
+
+              @include mobile() {
+                margin-top: 10px;
+                gap: 36px;
+                justify-content: center;
+              }
+            } // --- .icon_color
+
+            // .bottom_color
+            @at-root .bottom_color {
+              width: 100%;
+              margin-top: 30px;
+              display: flex;
+              gap: 24px;
+            
+              @at-root .point_color {
+                display: flex;
+                row-gap: 10px;
+                flex-direction: column;
+              
+                .icon_red {
+                  width: 60px;
+                  height: 60px;
+                  margin-top: 13px;
+                  border-radius: 50%;
+                  background-color: $color_red;
+
+                  @include mobile() {
+                    width: 78px;
+                    height: 78px;
+                  }
+
+                  @include pcfull() {
+                    width: 80px;
+                    height: 80px;
+                  }
+                }
+              } // --- .point_color
+
+              // .background_color
+              @at-root .background_color {
+                display: flex;
+                row-gap: 10px;
+                flex-direction: column;
+              
+                .icon_white {
+                  width: 60px;
+                  height: 60px;
+                  margin-top: 13px;
+                  border: 1px solid #cfcfcf;
+                  border-radius: 50%;
+                  background-color: $color_graywhite;
+
+                  @include mobile() {
+                    width: 78px;
+                    height: 78px;
+                  }
+
+                  @include pcfull() {
+                    width: 80px;
+                    height: 80px;
+                  }
+                }
+
+                .backgroundColorTxt {
+                  text-align-last: left;
+                  margin-left: 8.77px;
+                }
+              } // --- .background_color
+
+              @include mobile() {
+                margin-top: 6.53%;
+                gap: 36px;
+                justify-content: center;
+              }
+
+              @include tablet() {
+                margin-top: 26px;
+              }
+            } // --- .bottom_color
+          } // --- .color_content - 사용한 색상 가이드라인
+        }
+
+        // .button_color
+        @at-root .button_color {
+          width: 100%;
+          margin-top: 64px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          font-weight: $font_weight_medium;
+          
+          // .button_content
+          @at-root .button_content {
+            width: 294px;
+            display: flex;
+            margin-left: 5px;
+            gap: 18px;
+          
+            .resume_btn {
+              @include fnb ();
+              background-color: $color_yellow;
+            }
+
+            .github_btn {
+              @include fnb ();
+              background-color: $color_blue;
+              color: $color_white;
+            }
+
+            .notion_btn {
+              @include fnb ();
+              background-color: $color_orange;
+            }
+
+            @include mobile() {
+              display: none;
+            }
+
+            @include tablet() {
+              width: auto;
+            }
+          } // --- .button_content
+
+          // .button_hover - 버튼 마우스 오버 시 색상 및 굵기
+          @at-root .button_hover {
+            width: 100%;
+            display: flex;
+            margin-left: 5px;
+            gap: 30px;
+          
+            h5 {
+              @include h5();
+            }
+
+            span {
+              font-size: 36px;
+              font-weight: $font_weight_regular;
+            }
+
+            p {
+              font-size: map-get($map: $font_size, $key: content1);
+              font-weight: $font_weight_regular;
+            }
+
+            // .nomal_part
+            @at-root .nomal_part {
+              width: 33.42%;
+
+              @at-root .nomal_ex {
+                width: 100%;
+                height: 14.085vh;
+                margin-top: 10%;
+                padding-top: 20%;              
+                text-align: center;
+                border: 1.5px solid $color_grayC;
+                border-radius: 4px;
+
+                @include mobile() {
+                  margin-top: 10px;
+                  padding-top: 20px;
+                }
+
+                @include tablet() {
+                  margin-top: 10px;
+                  padding-top: 20px;
+                }
+
+                @include pcfull() {
+                  padding-top: 34.735%;
+                }
+              }
+            } // --- .nomal_part
+
+            // .hover_part
+            @at-root .hover_part {
+              width: 33.42%;
+
+              @at-root .hover_ex {
+                width: 100%;
+                height: 14.085vh;
+                margin-top: 10%;
+                padding-top: 20%;              
+                text-align: center;
+                border: 1.5px solid $color_grayC;
+                border-radius: 4px;
+              
+                span {
+                  font-weight: $font_weight_medium;
+                  color: $color_red;
+                }
+
+                p {
+                  color: $color_red;
+                }
+
+                @include mobile() {
+                  margin-top: 10px;
+                  padding-top: 20px;
+                }
+
+                @include tablet() {
+                  margin-top: 10px;
+                  padding-top: 20px;
+                }
+
+                @include pcfull() {
+                  padding-top: 34.735%;
+                }
+              } // --- .hover_ex
+            } // --- .hover_part
+
+            @include mobile() {
+              margin-left: 2.177%;
+              justify-content: center;
+            }
+          } // --- .button_hover
+
+          @include mobile() {
+            margin-top: 9.143%;
+          }
+
+          @include tablet() {
+            width: 100%;
+            margin-top: 13.16%;
+          }
+        } // --- .button_color
+      } // --- color_part  - 가이드라인 color부분
+    } // --- .port_content - 포트폴리오 프로젝트 설명
+  } // --- .guide - 가이드라인부분
+
+  // .pagever_intro - 사이트 주기능 설명
+  @at-root .pagever_intro {
+    @include pageIntro();
+
+    h3 {
+      @include guidelineh3 ();
+    }
+
+    @at-root .pagever_content {
+      display: flex;
+      gap: 30px;
+      margin-top: 36px;
+      justify-content: center;
+
+      @include mobile() {
+        flex-wrap: wrap-reverse;
+      }
+      @at-root .portfolio_mockup {
+        width: 48.704%;
+        height: 960px;
+        margin-top: 36px;
+        background-image: url(../../img/portfolio_capture.png);
+        background-size: 100% 100%;
+
+        @include mobile() {
+          width: 350px;
+          height: 77.465vh;
+          margin: auto;
+          margin-top: 0;
+        }
+
+        @include tablet() {
+          width: 368px;
+          height: 628px;
+          margin-top: 0;
+        }
+
+        @include pcfull() {
+          height: 1400px;
+        }
+      }
+      
+      @include mobile() {
+        margin-top: 8px;
+      }
+
+      @include tablet() {
+        margin-top: 2.396%;
+        justify-content: center;
+      }
+
+      @at-root .page_explanation {
+        h4 {
+          @include h4();
+        }
+        p {
+          @include arrowSvgTxt();
+        }
+        // 빨간 선
+        @at-root .arrowLineRed {
+          position: relative;
+          top: 2.0084%;
+          left: 0%;
+          p {
+            @include mobile() {
+              margin-top: 2.667%;
+              top: 0;
+              left: 0;
+            }
+
+            @include tablet() {
+              top: 4px;
+              left: 0;
+              margin-top: 10px;
+            }
+          }
+          svg {
+            @include arrowSvg();
+            bottom: 84px;
+            left: 320px;
+
+            @include mobile() {
+              display: none;
+            }
+
+            @include tablet() {
+              width: 50%;
+              bottom: 98px;
+              left: 60%;
+            }
+          }
+
+          @include mobile() {
+            top: 0;
+            left: 0;
+            text-align: center;
+          }
+
+          @include tablet() {
+            width: 100%;
+            top: 0;
+            left: 0;
+          }
+        } // --- arrowLineRed
+
+        // 파란선
+        @at-root .arrowLineBlue {
+          position: relative;
+          top: 20.984%;
+          left: 11.418%;
+          p {
+            @include mobile() {
+              margin-top: 2.667%;
+              top: 0;
+              left: 0;
+            }
+          }
+          svg {
+            @include arrowSvg();
+            bottom: 92px;
+            left: 300px;
+
+            @include mobile() {
+              display: none;
+            }
+
+            @include tablet() {
+              width: 41%;
+              bottom: 102px;
+              left: 65%;
+            }
+          }
+
+          @include mobile() {
+            margin-top: 5%;
+            top: 0;
+            left: 0;
+            text-align: center;
+          }
+
+          @include tablet() {
+            top: 86px;
+            left: 0;
+          }
+
+          @include pcfull() {
+            top: 24.93036%;
+          }
+        } // --- arrowLineBlue
+
+        // 노란선
+        @at-root .arrowLineYellow {
+          position: relative;
+          top: 24.699%;
+          left: 0%;
+          p {
+            @include mobile() {
+              margin-top: 2.667%;
+              top: 0;
+              left: 0;
+            }
+          }
+          svg {
+            @include arrowSvg();
+            bottom: 80px;
+            left: 330px;
+
+            @include mobile() {
+              display: none;
+            }
+
+            @include tablet() {
+              width: 116.667%;
+              bottom: 70px;
+              left: 46%;
+            }
+          }
+
+          @include mobile() {
+            margin-top: 5%;
+            top: 0;
+            left: 0;
+            text-align: center;
+          }
+
+          @include tablet() {
+            top: 100px;
+            left: 0;
+          }
+
+          @include pcfull() {
+            top: 32.73%;
+            left: 27%;
+          }
+        } // --- arrowLineYellow
+
+        // 주황선
+        @at-root .arrowLineOrenge {
+          position: relative;
+          top: 42.571%;
+          left: 15.749%;
+
+          p {
+            @include mobile() {
+              margin-top: 2.667%;
+              top: 0;
+              left: 0;
+            }
+          }
+          svg {
+            @include arrowSvg();
+            bottom: 50px;
+            left: 324px;
+
+            @include mobile() {
+              display: none;
+            }
+
+            @include tablet() {
+              width: 40%;
+              bottom: 70px;
+              left: 63.334%;
+          
+            }
+          }
+
+          @include mobile() {
+            margin-top: 5%;
+            top: 0;
+            left: 0;
+            text-align: center;
+          }
+
+          @include tablet() {
+            top: 170px;
+            left: 30px;        
+          }
+
+          @include pcfull() {
+            top: 55.5713%;
+          }
+        } // --- arrowLineOrenge
+        @include mobile() {
+          width: 100%;
+          height: auto;
+          margin-bottom: 40px;
+        }
+
+        @include tablet() {
+          width: auto;
+        }
+      } // --- .page_explanation
+    } // --- pagever_content
+  } // --- pagever_intro - 사이트 주기능 설명
+
+  @include mobile() {
+    padding: 0 2.137%;
+  }
+
+  @include tablet() {
+    padding: 0 6.511% 3.907%;
+  }
+} // --- .portfolio_content - 포트폴리오 프로젝트 설명

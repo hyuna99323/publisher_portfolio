@@ -1,0 +1,54 @@
+// variable.scss
+
+// color =========================
+$color_blue: #006DA9;
+$color_orange: #FB8145;
+$color_yellow: #FDD131;
+$color_red: #D71C02;
+$color_green: #0A4B41;
+$color_black: #000;
+$color_white: #fff;
+$color_graywhite: #fffffc;
+$color_gray: #888;
+$color_grayC: #ccc;
+// ================================
+// border 
+$line1 : 1px solid $color_black;
+$line2 : 1px solid $color_white;
+
+// font ===========================
+$font-family_black: 'Black Han Sans', sans-serif;
+$font_family_score: 'S-CoreDream-3Light';
+$font_family_kim: 'GeneralKimJwajinOTF_Regular','GeneralKimJwajinOTF_Bold';
+$font_weight_regular: 300;
+$font_weight_medium: 500;
+$font_weight_bold: 600;
+
+$font_size_m:(
+  subtitle: 14px, pointcontent: 15px, projecttitle: 28px,
+  projectsub: 16px, content1: 13px, content2: 12px, emphasis: 20px);
+
+$font_size:(
+  subtitle: 16px, pointcontent: 18px, projecttitle: 32px,
+  projectsub: 20px, content1: 14px, content2: 12px, fnb: 11px, emphasis: 30px);
+
+$font_size_pcFull:(
+  title: 35px, pointtitle: 24px, banner: 140px,
+  content1: 17px, pointContent2: 35px, contactemail: 64px);
+
+$letter-spacing: (
+  title: 0.7em, content: 0.3em, content_kr: 0.1em );
+// device size ================================
+$mobile: 320px;
+$tablet: 768px;
+$laptop: 1024px;
+$pc: 1440px;
+$pcfull: 1920px;
+
+// width, height
+// $width100: 100%;
+// $auto: auto;
+// $displayflex: flex;
+// $box-sizing: border-box;
+
+

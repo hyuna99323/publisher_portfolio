@@ -1,0 +1,242 @@
+// #home
+#home {
+  width: 100%;
+  // height: 100vh;
+  display: flex;
+  padding: 3.125% 7.813%;
+
+
+  
+  @at-root .left_span {
+    width: 22.2223%;
+    // height: 40px;
+    text-align: center;
+    align-self: center;
+    line-height: 62px;
+
+    span {
+      // height: 88.8vh;
+      display: block;
+      text-orientation: sideways;
+      text-align: center;
+      font-size: map-get($map: $font_size, $key: pointcontent);
+
+      @include mobile() {
+        height: auto;
+        margin: 4.667% 0 10% 0;;
+        font-size: map-get($map: $font_size_m, $key: pointcontent);
+        text-orientation: sideways;
+      }
+
+      @include tablet() {
+        // height: 91.8vh;
+        font-size: map-get($map: $font_size_m, $key: pointcontent);
+        writing-mode: vertical-rl;
+        // text-orientation: sideways;
+      }
+
+      @include laptop() {
+        writing-mode: vertical-rl;
+      }
+      
+      @include pc() {
+        writing-mode: vertical-rl;
+      }
+
+      @include pcfull() {
+        writing-mode: vertical-rl;
+      }
+    }
+
+    @include mobile() {
+      width: 100%;
+      height: auto;
+      text-align: center;
+      transform: rotate(0deg);
+      line-height: 25px;
+      top: 0px;
+      right: 0px;
+    }
+  }
+  @at-root .middle_content {
+    width: 55.556%;
+    // height: min-content;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    & p:first-child {
+      width: 100%;
+      margin: 7% 0 10% 0;
+      font-size: map-get($map: $font_size, $key: pointcontent);
+      font-weight: $font_weight_bold;
+      color: $color_red;
+
+      @include mobile() {
+        height: 20px;
+        margin-top: 4.667%;
+        font-size: map-get($map: $font_size_m, $key: pointcontent);
+      }
+
+      @include tablet() {
+        // margin: 0 0 10% 0;
+        margin: 0;
+      }
+
+      @include pc() {
+        margin: 2.178% 0 7.822%;
+      }
+    }
+    @at-root .cover_img {
+      margin: auto;
+      position: relative;
+
+      @include mobile() {
+        margin-top: 15px;
+      }
+
+      // @include tablet() {
+      //   margin: 20% auto;
+      // }
+    }
+    @at-root .coverImgInner {
+      width: 335px;
+      height: 322px;
+      background-image: url(../../img/coverImg.JPG);
+      background-size: 100% 100%;
+
+      @include mobile() {
+        width: 216px;
+        height: 200px;
+      }
+    }
+    @at-root .blue_H {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: 100px;
+      right: 91.045%;
+      transform: rotate(-8.67deg);
+      background: $color_blue;
+
+      @include mobile() {
+        width: 24px;
+        height: 24px;
+        top: 50px;
+        left: -3.48%;
+      }
+    }
+    @at-root .orange_A {
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      border-bottom: 65px solid $color_orange;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      top: 10px;
+      left: 91.5%;
+      transform: rotate(36.306deg);
+
+      @include mobile() {
+        position: absolute;
+        border-bottom: 30px solid $color_orange;
+        border-left: 14px solid transparent;
+        border-right: 14px solid transparent;
+        top: 3px;
+        left: 95.373%;
+      }
+    }
+    @at-root .yellow_O {
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      top: 280px;
+      left: 86%;
+      transform: rotate(36.306deg);
+      background-color: $color_yellow;
+
+      @include mobile() {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 186px;
+        left: 93.52%;
+      }
+    }
+    & p:last-child {
+      width: 100%;
+      margin-top: 10%;
+      font-size: map-get($map: $font_size, $key: pointcontent);
+      font-weight: $font_weight_medium;
+      color: $color_red;
+
+      @include mobile() {
+        display: none;
+      }
+      @include tablet() {
+        height: fit-content;
+        position: relative;
+        top: 11.924%;
+        margin-top: 0;
+      }
+    }
+    @include mobile() {
+      width: 100%;
+      height: auto;
+    }
+
+    @include laptop() {
+      height: min-content;
+    }
+    @include pc() {
+      height: auto;
+    }
+    @include pcfull() {
+      height: min-content;
+    }
+  } // --- .middle_content
+
+  // .right_span
+  @at-root .right_span {
+    width: 22.2223%;
+    display: inline-block;
+    text-align: -webkit-right;
+    align-self: center;
+
+    @include mobile() {
+      display: none;
+    }
+
+    span {
+      // height: 88.8vh;
+      display: block;
+      font-size: map-get($map: $font_size, $key: pointcontent);
+      font-weight: $font_weight_bold;
+      text-align: center;
+      color: $color_red;
+      transform: rotate(180deg);
+      writing-mode: vertical-rl;
+      text-orientation: sideways;
+    }
+  } // --- .right_span
+
+  @include mobile() {
+    height: max-content;
+    padding: 2.188% 3.125%;
+    flex-wrap: wrap-reverse;
+  }
+
+  @include tablet() {
+    height: 88.5vh;
+    padding: 3.907% 6.511%;
+  }
+
+  @include pc() {
+    height: 87vh;
+  }
+
+  @include pcfull() {
+    height: 88vh;
+  }
+} // --- #home

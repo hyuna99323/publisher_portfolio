@@ -1,0 +1,53 @@
+// portfolio2.scss
+/* portfolio2.css */
+
+@import "../common/variable";
+@import "../common/mixin";
+
+/* fonts.css */
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Black Han Sans';
+  src: url("../../font/Black_Han_Sans/BlackHanSans-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GeneralKimJwajinOTF_Regular';
+  src: url('../../font/K7_General_OTF/GeneralKimJwajinOTF_Bold.otf');
+  src: url('../../font/K7_General_OTF/GeneralKimJwajinOTF_Regular.otf');
+}
+
+*{
+  cursor: url(../../img/cursor.svg) 5 5, progress;
+}
+*::selection {
+  color: $color_orange;
+}
+
+/* #wrap - 전체 레이아웃 설정 */
+// #wrap - 전체 레이아웃 설정
+#wrap {
+  width: 100%;
+  height: auto;
+  min-height: 800px;
+  margin: auto;
+  background-color: $color_white;
+  font-family: "S-Core_Dream_OTF";
+  font-weight: 300;
+} // --- #wrap
+
+@import "../portfolio/base/headbox";
+
+@import "../portfolio/main/homebox";
+@import "../portfolio/main/introducebox";
+@import "../portfolio/main/advantagebox";
+@import "../portfolio/main/projectbox";
+@import "../portfolio/main/contactbox";
+
+@import "../portfolio/base/footbox";

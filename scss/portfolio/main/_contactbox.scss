@@ -1,0 +1,89 @@
+// #contact
+#contact {
+  width: 100%;
+  height: auto;
+  padding: 3.125% 7.813%;
+  background-color: #fffffc;
+
+
+
+  h2 {
+    @include h2;
+    padding: 0;
+  }
+
+  .img_container {
+    width: 240px;
+    height: 240px;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    background-image: url(../../img/endingImg.JPG);
+    background-size: 100% 100%;
+
+    @include mobile() {
+      width: 186px;
+      height: 186px;
+      margin-top: 12.667%;
+    }
+  } // --- img_container
+
+  p {
+    width: 100%;
+    height: auto;
+    margin-top: 35px;
+    font-size: map-get($map: $font_size, $key: emphasis);
+    font-weight: $font_weight_bold;
+    text-align: center;
+    color: $color_red;
+    text-transform: capitalize;
+
+    @include mobile() {
+      height: auto;
+      font-size: map-get($map: $font_size_m, $key: emphasis);
+    }
+  }
+
+  // .personal_data
+  .personal_data {
+    
+    p:first-child {
+      width: 100%;
+      height: auto;
+      margin-top: 60px;
+      font-size: map-get($map: $font_size, $key: subtitle);
+      font-weight: $font_weight_bold;
+      text-align: center;
+
+      @include mobile() {
+        height: auto;
+        margin-top: 40px;
+      }
+    } // --- p:first-child
+
+    a {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      margin-top: 25px;
+      text-align: center;
+      font-size: map-get($map: $font_size, $key: content1);
+      letter-spacing: 1px;
+
+      @include mobile() {
+        margin-top: 10px;
+      }
+    } // --- a
+  } // --- .personal_data
+
+  @include mobile() {
+    height: auto;
+    padding: 12.5% 3.125%;
+  }
+
+  @include tablet() {
+    height: auto;
+    padding: 3.125% 6.511% 3.907%;
+  }
+} // --- #contact

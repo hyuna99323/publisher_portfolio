@@ -1,0 +1,26 @@
+  // .kiki_content - 마녀배달부키키 프로젝트 설명
+  @at-root .ediya_content {
+    height: auto;
+    padding: 92px 100px;
+    // background-color: #243C84;
+    // color: $color_white;
+    border-bottom: 1px solid #ddd;
+
+    // .project_intro
+    @at-root .ediya_intro {
+      @include projectIntro();
+
+      // .mockup
+      @include guideMockup();
+
+      @include introTxt();
+
+      @include mobile() {
+        flex-wrap: wrap-reverse;
+      }
+
+      @include tablet() {
+        flex-wrap: wrap-reverse;
+      }
+    }
+  }

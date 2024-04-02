@@ -1,0 +1,24 @@
+// #project
+#project {
+  width: 100%;
+  height: auto;
+  padding-top: 3.125%;
+
+  @at-root h2 {
+    @include h2;
+    padding: 0 100px;
+
+    @include mobile() {
+      padding: 0 10px;
+    }
+
+    @include tablet() {
+      padding: 0 6.511%;
+    }
+  }
+
+  @import "../main/projectediya";
+  @import "../main/projectportfolio";
+  @import "../main/projectkiki";
+  @import "../main/projectexhuma";
+}   // #project

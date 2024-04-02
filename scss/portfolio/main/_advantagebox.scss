@@ -1,0 +1,307 @@
+// #advantage
+#advantage {
+  @include sectionBasic();
+  
+  position: relative;
+  display: flex;
+  padding: 3.125% 7.813%;
+  z-index: 1;
+
+  h2 {
+    @include h2();
+    width: 100%;
+
+    @include laptop() {
+      display: none;
+    }
+    @include pc() {
+      display: none;
+    }
+    @include pcfull() {
+      display: none;
+    }
+  }
+
+  @at-root .advantageBox {
+
+    @include mobile() {
+
+    }
+
+    @include tablet() {
+      width: 31.32%;
+    }
+
+    @include laptop() {
+      position: relative;
+      flex: 1;
+      padding: 84px 6px 36px;
+      opacity: 0.6;
+      transition: flex 1s, opacity 1s;
+      z-index: 1;
+      cursor: pointer;
+    }
+
+    @include pc() {
+      position: relative;
+      flex: 1;
+      padding: 84px 6px 36px;
+      opacity: 0.6;
+      transition: flex 1s, opacity 1s;
+      z-index: 1;
+      cursor: pointer;
+    }
+
+    @include pcfull() {
+      position: relative;
+      flex: 1;
+      padding: 84px 6px 36px;
+      opacity: 0.6;
+      transition: flex 1s, opacity 1s;
+      z-index: 1;
+      cursor: pointer;
+    }
+  }
+  @at-root .advantageBox:hover {
+
+    @include laptop() {
+      flex: 1.5;
+      opacity: 1;
+      z-index: 2;
+    }
+
+    @include pc() {
+      flex: 1.5;
+      opacity: 1;
+      z-index: 2;
+    }
+
+    @include pcfull() {
+      flex: 1.5;
+      opacity: 1;
+      z-index: 2;
+    }
+  }
+  @at-root .advantageBox:hover::before {
+    
+    @include laptop() {
+      left: 0px;
+      opacity: 1;
+    }
+
+    @include pc() {
+      left: 0px;
+      opacity: 1;
+    }
+
+    @include pcfull() {
+      left: 0px;
+      opacity: 1;
+    }
+  }
+  @at-root .advantageBox:hover .advantage_inner .advantage_txt {
+
+    @include laptop() {
+      width: 75%;
+      
+      h3 {
+        font-size: 5vw;
+        padding-top: 0px;
+      }
+      h3::after {
+        width: 120px;
+        background: $color_blue;
+        height: 3px;
+      }
+    }
+
+    @include pc() {
+      width: 75%;
+      
+      h3 {
+        font-size: 5vw;
+        padding-top: 0px;
+      }
+      h3::after {
+        width: 120px;
+        background: $color_blue;
+        height: 3px;
+      }
+    }
+
+    @include pcfull() {
+      width: 75%;
+      
+      h3 {
+        font-size: 5vw;
+        padding-top: 0px;
+      }
+      h3::after {
+        width: 120px;
+        background: $color_blue;
+        height: 3px;
+      }
+    }
+  } // --- .advantage_txt
+
+  @at-root .advantageBox:hover .advantage_inner figure {
+
+    @include laptop() {
+      height: 25vh;
+      filter: saturate(120%);
+      transform: translateY(3vh);
+    }
+    @include pc() {
+      height: 25vh;
+      filter: saturate(120%);
+      transform: translateY(3vh);
+    }
+    @include pcfull() {
+      height: 25vh;
+      filter: saturate(120%);
+      transform: translateY(3vh);
+    }
+  }
+
+  @at-root .advantageBox::before {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 95%;
+    background: $color_yellow;
+    position: absolute;
+    top: 40px;
+    left: -50px;
+    opacity: 0;
+    transition: 1s;
+
+    @include tablet() {
+      display: none;
+    }
+  }
+
+  // .advantage_inner
+  @at-root .advantage_inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    position: relative;
+
+    @at-root .advantage_txt {
+      width: 100%;
+      transition: 0.5s;
+      margin-bottom: 40px;
+
+      h3 {
+        margin-bottom: 40px;
+        padding-top: 70px;
+        font-size: map-get($map: $font_size, $key: emphasis);
+        font-weight: $font_weight_bold;
+        color: $color_red;
+        transition: 1s;
+
+        @include mobile() {
+          margin-bottom: 20px;
+          padding-top: 30px;
+        }
+
+        @include tablet() {
+          margin-bottom: 20px;
+          padding-top: 0px;
+        }
+      }
+    } // --- .advantage_txt
+
+    @at-root .advantage_txt h3::after {
+
+      @include laptop() {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 2px;
+        background: #777;
+        margin-top: 20px;
+        transition: 1.5s;
+      }
+
+      @include pc() {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 2px;
+        background: #777;
+        margin-top: 20px;
+        transition: 1.5s;
+      }
+
+      @include pcfull() {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 2px;
+        background: #777;
+        margin-top: 20px;
+        transition: 1.5s;
+      }
+    }
+
+    @at-root .advantage_txt p {
+      font-size: map-get($map: $font_size, $key: pointcontent);
+      font-weight: $font_weight_bold;
+    }
+
+    @at-root .advantage_txt p:last-child {
+      font-size: map-get($map: $font_size, $key: content1);
+      font-weight: $font_weight_regular;
+      margin-top: 10px;
+    }
+
+    // figure
+    figure {
+      width: 100%;
+      height: 130px;
+      background: #777;
+      transform-origin: left center;
+      box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+      position: relative;
+      overflow: hidden;
+      filter: saturate(10%);
+      transition: 1s;
+
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      @include mobile() {
+        width: 50%;
+        margin: auto;
+        filter: saturate(100%);
+      }
+
+      @include tablet() {
+        filter: saturate(100%);
+      }
+    } // --- figure
+  } // --- .advantage_inner
+
+
+
+  @include tablet() {
+    height: auto;
+    padding: 3.125% 6.511% 3.907%;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 50px;
+  }
+
+  @include mobile() {
+    height: auto;
+    padding: 3.125% 6.511% 15.625%;
+    flex-wrap: wrap;
+    row-gap: 15px;
+  }
+} // --- #advantage

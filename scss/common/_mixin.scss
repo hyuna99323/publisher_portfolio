@@ -1,0 +1,714 @@
+// @use "sass:math"; 
+
+
+@mixin font_set (){
+  font-family:$font_family_black,  $font_family_score;
+}
+
+// image
+
+// section 기본 설정
+@mixin sectionBasic() {
+  width: 100%;
+  height: 100vh;
+}
+
+// 제목 설정
+@mixin h2() {
+  text-align: right;
+  font-size: map-get($map: $font_size, $key: subtitle);
+  font-weight: $font_weight_medium;
+  color: $color_blue;
+  text-transform: uppercase;
+
+  @include mobile() {
+    font-size: map-get($map: $font_size_m, $key: subtitle);
+    }
+}
+
+@mixin h3() {
+  width: auto;
+  height: 24px;
+  font-size: map-get($map: $font_size, $key: subtitle);
+  font-weight: $font_weight_bold;
+  text-transform: uppercase;
+  line-height: 24px;
+
+  @include mobile() {
+    font-size: map-get($map: $font_size_m, $key: subtitle);
+  }
+
+  @include tablet() {
+    height: auto;
+    font-size: map-get($map: $font_size_m, $key: subtitle);
+  }
+}
+
+// 가이드 라인 소제목
+@mixin guidelineh3 {
+  font-size: map-get($map: $font_size, $key: projectsub);
+  font-weight: $font_weight_bold;
+  text-transform: capitalize;
+
+  @include mobile() {
+    font-size: map-get($map: $font_size_m, $key: projectsub);
+  }
+
+  @include tablet() {
+    font-size: map-get($map: $font_size_m, $key: projectsub);
+  }
+}
+
+@mixin h4() {
+  font-size: map-get($map: $font_size, $key: subtitle);
+  font-weight: $font_weight_medium;
+  text-transform: capitalize;
+
+  @include tablet() {
+    font-size: map-get($map: $font_size_m, $key: pointcontent);
+  }
+}
+
+@mixin h5() {
+  width: 100%;
+  font-size: map-get($map: $font_size, $key: subtitle);
+  font-weight: $font_weight_medium;
+  color: $color_gray;
+
+  @include mobile() {
+    font-size: map-get($map: $font_size_m, $key: subtitle);
+  }
+
+  @include tablet() {
+    font-size: map-get($map: $font_size_m, $key: subtitle);
+  }
+}
+
+// project ---------------------------
+
+@mixin guideMockup() {
+  .mockup {
+    width: 58.519%;
+    height: auto;
+
+    img {
+      width: 100%;
+      
+      @include mobile() {
+        width: 100%;
+        height: auto;
+      }
+    }
+    @include mobile() {
+      width: 100%;
+      height: auto;
+    }
+    
+    @include tablet() {
+      width: 100%;
+      height: auto;
+    }
+  } /* --- .mockup */
+}
+// 가이드라인 전체 박스 설정
+@mixin guideBox() {
+  width: 100%;
+  height: auto;
+  padding: 5.989% 0;
+
+  @include tablet() {
+    padding: 5.989% 0;
+  }
+}
+
+// 가이드 라인 레이아웃 flex 설정
+@mixin guideflex() {
+  display: flex;
+  gap: 4.1%;
+
+  @include mobile() {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  @include tablet() {
+    flex-wrap: wrap;
+    gap: 3.2%;
+    row-gap: 50px;
+  }
+}
+
+// 가이드 라인 로고
+@mixin guidelogoContent() {
+  width: 33%;
+  height: auto;
+  margin-top: 30px;
+  flex-direction: column;
+  margin-left: 15px;
+
+  @include mobile() {
+    width: 100%;
+    margin-top: 8px;
+    margin-left: 0px;
+  }
+
+  @include tablet() {
+    width: 100%;
+    margin-top: 2.396%;
+    margin-left: 1.498%;
+  }
+}
+
+// 폰트 한눈에 보기 상자
+@mixin fontName() {
+  width: 100%;
+  height: auto;
+  padding: 5.3px;
+  border-top: 1.5px solid #eee;
+  border-radius: 4px;
+
+  p {
+    font-size: map-get($map: $font_size, $key: content1);
+    font-weight: $font_weight_medium;
+
+    @include mobile() {
+      font-size: map-get($map: $font_size_m, $key: content1);
+    }
+
+    @include tablet() {
+      font-size: map-get($map: $font_size_m, $key: content1);
+    }
+  }
+
+  @include mobile() {
+    height: 32px;
+    padding: 2.36%;
+  }
+}
+
+// 로고 마진
+@mixin logoMargin() {
+  margin-top: 22px;
+  margin-left: 5px;
+}
+
+// 로고 설명 p설정
+@mixin logoInP {
+  margin-top: 10px;
+  font-size: map-get($map: $font_size, $key: content1);
+
+  @include mobile() {
+    font-size: map-get($map: $font_size_m, $key: content1);
+  }
+
+  @include tablet() {
+    font-size: map-get($map: $font_size_m, $key: content1);
+  }
+}
+
+// 폰트 상자 설정
+@mixin fontPartBox() {
+  width: 30.371%;
+  height: auto;
+  margin-top: 2.778%;
+
+  h4 {
+    @include h4();
+  }
+
+  h5 {
+    @include h5();
+    margin-top: 18px;
+
+    @include mobile() {
+      margin-top: 2.612%;
+    }
+  }
+
+  .font_ex {
+    margin-top: 18px;
+    display: flex;
+    gap: 16px;
+
+    span {
+      width: 100%;
+      height: 10.141vh;
+      display: block;
+      font-size: 36px;
+      font-weight: $font_weight_regular;
+      text-align: center;
+      line-height:  10.705vh;
+
+      @include mobile() {
+        height: 72px;
+        line-height: 76px;
+      }
+    }
+
+    .font_name {
+      p {
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      p:last-child {
+        font-size: 12px;
+        font-weight: 300;
+      }
+      @include fontName();
+    } /* .font_name */
+
+    .font_regular {
+      width: 32.524%;
+      height: 17.043vh;
+      border: 1.5px solid #ccc;
+      border-radius: 4px;
+
+      @include mobile() {
+        width: 92px;
+        height: 112px;
+      }
+    } /* .font_regular */
+
+    .font_medium {
+      width: 32.524%;
+      height: 17.043vh;
+      border: 1.5px solid #ccc;
+      border-radius: 4px;
+
+      span {
+        font-weight: $font_weight_medium;
+      }
+
+      @include mobile() {
+        width: 92px;
+        height: 112px;
+      }
+    } /* .font_medium */
+
+    .font_bold {
+      width: 32.524%;
+      height: 17.043vh;
+      border: 1.5px solid #ccc;
+      border-radius: 4px;
+
+      span {
+        font-weight: $font_weight_bold;
+      }
+
+      @include mobile() {
+        width: 92px;
+        height: 112px;
+      }
+    } /* .font_bold */
+
+    @include mobile() {
+      margin-top: 3.265%;
+      gap: 4.85%;
+      justify-content: center;
+    }
+
+    @include tablet() {
+      gap: 14px;
+    }
+  } /* .font_ex */
+
+  // 폰트 사이즈 가이드라인
+  /* 폰트 사이즈 가이드라인 */
+  .font_size {
+    margin-top: 4.575%;
+
+    span {
+      font-size: map-get($map: $font_size, $key: content1);
+
+      @include mobile() {
+        font-size: map-get($map: $font_size_m, $key: content1);
+      }
+    }
+
+    .small_exp {
+      margin-top: 20px;
+      font-size: map-get($map: $font_size, $key: fnb);
+      text-align: right;
+      color: $color_gray
+    }
+
+    .fontSize170 {
+      @include fontSizeEx();
+
+      p {
+        font-size: 44px;
+        letter-spacing: 10px;
+      }
+    } /* .fontSize30 */
+
+    .fontSize140 {
+      @include fontSizeEx();
+
+      p {
+        font-size: 42px;
+        letter-spacing: 10px;
+      }
+    } /* .fontSize30 */
+
+    .fontSize40 {
+      @include fontSizeEx();
+
+      p {
+        font-size: 40px;
+        letter-spacing: 10px;
+      }
+    } /* .fontSize30 */
+
+    .fontSize32 {
+      @include fontSizeEx();
+
+      p {
+        font-size: 32px;
+        letter-spacing: 10px;
+      }
+    } /* .fontSize30 */
+
+    .fontSize30 {
+      @include fontSizeEx();
+
+      p {
+        font-size: map-get($map: $font_size, $key:emphasis);
+        letter-spacing: 10px;
+      }
+    } /* .fontSize30 */
+
+    .fontSize24 {
+      @include fontSizeEx();
+
+      p {
+        font-size: 24px;
+        letter-spacing: 10px;
+      }
+    } /* .fontSize20 */
+
+    .fontSize20 {
+      @include fontSizeEx();
+
+      p {
+        font-size: map-get($map: $font_size, $key: projectsub);
+        letter-spacing: 10px;
+      }
+    } /* .fontSize20 */
+
+    .fontSize18 {
+      @include fontSizeEx();
+
+      p {
+        font-size: map-get($map: $font_size, $key: pointcontent);
+        letter-spacing: 10px;
+      }
+    } /* .fontSize18 */
+
+    .fontSize16 {
+      @include fontSizeEx();
+
+      p {
+        font-size: map-get($map: $font_size, $key: subtitle);
+        letter-spacing: 10px;
+      }
+    } /* .fontSize16 */
+
+    .fontSize14 {
+      @include fontSizeEx();
+
+      p {
+        font-size: map-get($map: $font_size, $key: content1);
+        letter-spacing: 10px;
+      }
+    } /* .fontSize14 */
+
+    @include mobile() {
+      margin-top: 4.898%;
+      display: contents;
+      // flex-direction: column;
+    }
+  }
+
+  @include mobile() {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  @include tablet() {
+    width: 48.204%;
+    height: auto;
+    margin-top: 2.396%;
+    margin-left: 1.498%;
+  }
+}
+
+// 컬러 상자 설정
+@mixin colorPartBox() {
+  width: 28%;
+  height: auto;
+  margin-top: 2.778%;
+  display: flex;
+  flex-direction: column;
+
+  @include mobile() {
+    width: 100%;
+  }
+
+  @include tablet() {
+    width: 45.51%;
+    height: fit-content;
+    margin-top: 2.396%;
+    margin-left: 1.498%;
+  }
+}
+
+// 가이드라인 컬러 색상표 글자 설정
+@mixin ColorRgbTxt() {
+  font-size: map-get($map: $font_size, $key: content1);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+// 배경 포인트 색상
+@mixin backPointColor {
+  width: 76px;
+  height: 104px;
+  border: 1.5px solid $color_gray;
+  border-radius: 4px;
+  background-color: $color_white;
+}
+
+// 배경 컬러 색상표(한눈에 보기)
+@mixin back_shapes() {
+  width: 73px;
+  height: 72px;
+}
+
+// 하단 nav 설정
+@mixin fnb() {
+  width: 86px;
+  height: 24px;
+  line-height: 24px;
+  font-size: map-get($map: $font_size, $key: fnb);
+  text-align: center;
+  font-weight: $font_weight_medium;
+  border-radius: 10px;
+}
+
+// 폰트 사이즈 예시
+@mixin fontSizeEx() {
+  margin-top: 10px;
+}
+
+// 프로젝트 인트로
+@mixin projectIntro() {
+  display: flex;
+  gap: 88px;
+  justify-content: center;
+
+  @include mobile() {
+    height: auto;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @include tablet() {
+    height: auto;
+  }
+}
+
+@mixin pageIntro() {
+  width: 100%;
+  height: auto;
+  padding-top: 40px;
+
+  @include mobile() {
+    padding-top: 0px;
+  }
+
+  @include tablet() {
+    padding-top: 5.989%;
+  }
+}
+
+@mixin arrowSvg() {
+  width: auto;
+  stroke-width: 3px;
+  position: relative;
+
+}
+
+@mixin arrowSvgTxt() {
+  width: 300px;
+  position: relative;
+  font-size: map-get($map: $font_size, $key: content1);
+  margin-top: 15px;
+
+  @include mobile() {
+    margin: auto;
+    text-align: center;
+  }
+
+  @include tablet() {
+    font-size: map-get($map: $font_size_m, $key: content1);
+  }
+}
+
+// 인트로 텍스트 - 프로젝트 설명 텍스트 설정
+@mixin introTxt() {
+  .intro_txt {
+    width: 33.334%;
+    
+    h3 {
+      font-size: map-get($map: $font_size, $key: projecttitle);
+      font-weight: $font_weight_bold;
+      text-align: center;
+
+      @include mobile() {
+        font-size: map-get($map: $font_size_m, $key: projecttitle);
+      }
+    }
+    .sub_txt {
+      font-size: map-get($map: $font_size, $key: content1);
+      text-align: center;
+
+      @include mobile() {
+        font-size: map-get($map: $font_size_m, $key: content1);
+      }
+    }
+    span {
+      font-size: map-get($map: $font_size, $key: content2)
+      
+    }
+    .detail {
+      display: flex;
+      gap: 36px;
+      margin-top: 13.89%;
+
+      .subtitle {
+        p {
+          font-size: map-get($map: $font_size, $key: subtitle);
+          font-weight: $font_weight_bold;
+          line-height: 30px;
+
+          @include mobile() {
+          font-size: map-get($map: $font_size_m, $key: subtitle);
+          }
+        }
+
+        @include mobile() {
+          width: 50px;
+        }
+      }
+      .intro_content {
+        p {
+          font-size: map-get($map: $font_size, $key: content1);
+          line-height: 30px;
+
+          @include mobile() {
+            font-size: map-get($map: $font_size_m, $key: content1);
+          }
+
+          a:hover {
+            color: $color_red;
+            font-weight: $font_weight_bold;
+          }
+        }
+      }
+
+      @include mobile() {
+        margin-top: 10.715%;
+        gap: 10.715%;
+      }
+
+      @include tablet() {
+        width: 100%;
+      }
+    }
+    .project_explanation {
+      width: 97.223%;
+      height: auto;
+      margin-top: 13.89%;
+
+      p {
+        font-size: map-get($map: $font_size, $key: content1);
+        line-height: 25px;
+
+        @include mobile() {
+          font-size: map-get($map: $font_size_m, $key: content1);
+          line-height: 21px;
+        }
+
+        @include tablet() {
+          margin-top: 4.492%;
+        }
+      }
+
+      @include mobile() {
+        width: 100%;
+        height: auto;
+      }
+
+      @include tablet() {
+        display: contents;
+        align-items: end;
+      }
+    }
+    @include mobile() {
+      width: 100%;
+    }
+
+    @include tablet() {
+      width: 100%;
+    }
+  }
+}
+
+@mixin navHover() {
+  color: $color_red;
+  font-weight: $font_weight_bold;
+}
+
+
+
+// @media query --------------------------------------
+$mobile : 320px;
+$tablet : 768px;
+$laptop : 1280px;
+$pc:1440px;
+$pcfull : 1920px;
+
+
+
+@mixin mobile(){
+  @media all and (max-width: #{$tablet - 1}){
+    @content;
+  }
+}
+
+@mixin tablet(){
+  @media all and (min-width:$tablet) and (max-width:#{$laptop - 1}) {
+    @content; 
+  }
+}
+
+@mixin laptop(){
+  @media all and (min-width:$laptop) and (max-width:#{$pc - 1}) {
+    @content;
+  }
+}
+
+@mixin pc(){
+  @media all and (min-width:$pc) and (max-width:#{$pcfull - 1}) {
+    @content;
+  }
+}
+
+@mixin pcfull(){
+  @media all and (min-width:$pcfull) {
+    @content;
+  }
+}
+
